@@ -1,0 +1,2434 @@
+[13.04.2020 10:55:36]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/admin/images/
+
+
+
+[13.04.2020 10:55:36]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/admin/images/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586763665-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586763665-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1586763665-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586763665-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586763665-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1586763665-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 10:57:42]
+URI: http://os-div/admin/bs/category/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/bs/category/addnew1/
+
+
+Error #1: Unknown column 'act' in 'field list'  called at [] 
+#1  trigger_error(Unknown column 'act' in 'field list', 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(UPDATE `diafan_bs` SET act='1' WHERE cat_id IN (1)) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(UPDATE `diafan_bs` SET act='1' WHERE cat_id IN (1)) called at [F:\OSPanel\domains\os-div\adm\includes\save_functions.php:504]
+#4  Save_functions_admin->save_variable_act() called at [F:\OSPanel\domains\os-div\adm\includes\save.php:90]
+#5  Save_admin->__call(save_variable_act, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#6  Frame_admin->__call(save_variable_act, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#7  Init_admin->__call(save_variable_act, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:325]
+#8  Save_admin->prepare_new_values(Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:152]
+#9  Save_admin->save() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#10  Frame_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#11  Init_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:210]
+#12  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#13  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#14  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#15  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 11:05:50]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: syntax error, unexpected end of file  called at [F:\OSPanel\domains\os-div\modules\bs\views\bs.view.show_block_slider.php:86] 
+
+
+
+[13.04.2020 11:17:44]
+URI: http://os-div/admin/site/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/site/
+
+
+Error #1: Unknown column 'map_no_show' in 'where clause'  called at [] 
+#1  trigger_error(Unknown column 'map_no_show' in 'where clause', 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT id FROM `diafan_tags` WHERE 1=1 AND map_no_show='0') called at [F:\OSPanel\domains\os-div\includes\database.php:663]
+#3  DB::query_fetch_value(SELECT id FROM `diafan_tags` WHERE 1=1 AND map_no_show='0', tags, id) called at [F:\OSPanel\domains\os-div\modules\map\map.inc.php:414]
+#4  Map_inc->delete_sites(Array(...)) called at [F:\OSPanel\domains\os-div\modules\map\admin\map.admin.inc.php:216]
+#5  Map_admin_inc->act(site, Array(...), 0) called at [F:\OSPanel\domains\os-div\adm\includes\act.php:106]
+#6  Act_admin->act() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#7  Frame_admin->__call(act, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:236]
+#8  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#9  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#10  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#11  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 11:18:47]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:19:18]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:20:14]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:21:37]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:23:26]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:24:19]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:25:03]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:34:40]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:34:44]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:36:59]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:38:28]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:39:00]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:39:52]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:40:01]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 11:48:27]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
+#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
+#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
+#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
+#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
+#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
+#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Страницы с подключенным модулем не существует.  called at [insert tag] 
+#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., faq) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
+#2  Model->validate_attribute_site_cat(faq, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\faq\faq.model.php:727]
+#3  Faq_model->show_block(2, Array(...), Array(...), date, , ) called at [F:\OSPanel\domains\os-div\modules\faq\faq.php:117]
+#4  Faq->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 14:32:58]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/?587&help=1
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1586777577-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1586777577-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 14:32:58]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/admin/site/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1586590238 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1586777577-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1586590238 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1586777577-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 14:33:02]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/admin/site/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1586777577-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586777577-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1586777577-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 15:09:18]
+URI: http://os-div/admin/images/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/images/addnew1/
+
+
+Error #1: Undefined variable: oldparam  called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.php:471] 
+#1  Images_admin->save_variable_actions() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#2  Init_admin->__call(save_variable_actions, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:325]
+#3  Save_admin->prepare_new_values(Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:152]
+#4  Save_admin->save() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#5  Frame_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#6  Init_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:210]
+#7  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#8  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#9  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#10  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: Invalid argument supplied for foreach()  called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.php:471] 
+#1  Images_admin->save_variable_actions() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#2  Init_admin->__call(save_variable_actions, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:325]
+#3  Save_admin->prepare_new_values(Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:152]
+#4  Save_admin->save() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#5  Frame_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#6  Init_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:210]
+#7  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#8  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#9  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#10  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:09:47]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(214, 179, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/1_mekhanicheskie-ustroystva-up.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(1_mekhanicheskie-ustroystva-up.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpACF0.tmp, 1_mekhanicheskie-ustroystva-up.png, 1, 0, 8612c55d2969d1f587bf1c5aaaa32964) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(214, 179, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/1_mekhanicheskie-ustroystva-up.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(1_mekhanicheskie-ustroystva-up.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpACF0.tmp, 1_mekhanicheskie-ustroystva-up.png, 1, 0, 8612c55d2969d1f587bf1c5aaaa32964) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:10:08]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(212, 222, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/2_korobki-otbora-moschnosti.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(2_korobki-otbora-moschnosti.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpAE.tmp, 2_korobki-otbora-moschnosti.png, 1, 0, 1c303b0eed3133200cf715285011b4e4) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(212, 222, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/2_korobki-otbora-moschnosti.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(2_korobki-otbora-moschnosti.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpAE.tmp, 2_korobki-otbora-moschnosti.png, 1, 0, 1c303b0eed3133200cf715285011b4e4) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:10:17]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(222, 166, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/3_shesterenchatye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(3_shesterenchatye-nasosy.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php2379.tmp, 3_shesterenchatye-nasosy.png, 1, 0, 744878fbdd26871c594f57ca61733e09) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(222, 166, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/3_shesterenchatye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(3_shesterenchatye-nasosy.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php2379.tmp, 3_shesterenchatye-nasosy.png, 1, 0, 744878fbdd26871c594f57ca61733e09) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:10:27]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(198, 177, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/4_ruchnye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(4_ruchnye-nasosy.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php4923.tmp, 4_ruchnye-nasosy.png, 1, 0, 81c2f886f91e18fe16d6f4e865877cb6) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(198, 177, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/4_ruchnye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(4_ruchnye-nasosy.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php4923.tmp, 4_ruchnye-nasosy.png, 1, 0, 81c2f886f91e18fe16d6f4e865877cb6) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:10:36]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(214, 137, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/5_gidravlicheskie-raspredeli.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(5_gidravlicheskie-raspredeli.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php6CB9.tmp, 5_gidravlicheskie-raspredeli.png, 1, 0, f565bb9efccaf6986443db0bf01018bc) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(214, 137, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/5_gidravlicheskie-raspredeli.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(5_gidravlicheskie-raspredeli.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php6CB9.tmp, 5_gidravlicheskie-raspredeli.png, 1, 0, f565bb9efccaf6986443db0bf01018bc) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:10:45]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(99, 182, 99, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/6_pnevmaticheskie-organy-upra.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(6_pnevmaticheskie-organy-upra.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php8F65.tmp, 6_pnevmaticheskie-organy-upra.png, 1, 0, 4e8eaf897c638d519710b1691121f8cb) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(99, 182, 99, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/6_pnevmaticheskie-organy-upra.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(6_pnevmaticheskie-organy-upra.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\php8F65.tmp, 6_pnevmaticheskie-organy-upra.png, 1, 0, 4e8eaf897c638d519710b1691121f8cb) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:10:53]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(203, 143, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/7_porshnevye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(7_porshnevye-nasosy.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpAFDF.tmp, 7_porshnevye-nasosy.png, 1, 0, f7f84297f903c4ae67e9b17ebb49c5a3) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(203, 143, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/7_porshnevye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(7_porshnevye-nasosy.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpAFDF.tmp, 7_porshnevye-nasosy.png, 1, 0, f7f84297f903c4ae67e9b17ebb49c5a3) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:11:06]
+URI: http://os-div/admin/shop/category/site164/addnew1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/addnew1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(203, 191, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/8_emkostnoe-oborudovanie.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(8_emkostnoe-oborudovanie.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpE392.tmp, 8_emkostnoe-oborudovanie.png, 1, 0, 39144da5a6180c47885443c83547ec14) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(203, 191, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/8_emkostnoe-oborudovanie.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(8_emkostnoe-oborudovanie.png, shop, Array(...), 0, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:589]
+#6  Images_inc->upload(0, shop, cat, 164, F:\OSPanel\userdata\php_upload\phpE392.tmp, 8_emkostnoe-oborudovanie.png, 1, 0, 39144da5a6180c47885443c83547ec14) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:157]
+#7  Images_admin_action->upload() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:46]
+#8  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#9  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#10  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#11  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#12  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#13  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[13.04.2020 15:20:16]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: syntax error, unexpected '}', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:81] 
+
+
+
+[13.04.2020 15:20:22]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #16: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 15:21:43]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #16: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 15:21:50]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #16: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 15:22:04]
+URI: http://os-div/?587&help=1
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/?587&help=1
+
+
+Error #1: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Use of undefined constant i - assumed 'i'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #16: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php:44] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_category_index.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_category_index, shop, Array(...), index) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:335]
+#3  Shop->show_category(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#6  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[13.04.2020 15:59:07]
+URI: http://os-div/o-kompanii/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/kontakty/
+
+
+Error #1: Файл themes/functions/show__title.php не существует.  called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:465] 
+#1  Parser_theme->functions(show__title, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#2  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#3  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#4  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#5  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
