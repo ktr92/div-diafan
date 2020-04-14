@@ -1022,13 +1022,13 @@ font-weight: 500;
 	background-color: #2a5be4;
 }
 
-.catalogitems__buttons {
+/* .catalogitems__buttons {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
     line-height: 1;
 }
-
+ */
 .catalogitems__oldprice {
   font-size: 12px;
   color: rgb(151, 152, 160);
@@ -1037,7 +1037,7 @@ font-weight: 500;
   padding-right: 5px;
 }
 
-.catalogitems__price {
+span.price {
   font-size: 16px;
   color: rgb(42, 91, 228);
   line-height: 1.25;  
@@ -1067,11 +1067,14 @@ font-weight: 500;
 	top: 20px;
 	right: 20px;
 }
-.catalog__showmore {
+/* .paginator_more {
 	margin: 0 0 20px 0;
 }
+ */
 
-.catalog__showmore a {
+
+.paginator_more input[type="submit"] {
+	    -webkit-appearance: none;
 	border: 1px solid #b9bac6;
 	display: block;
 	height: 42px;
@@ -1080,6 +1083,8 @@ font-weight: 500;
 	border-radius: 21px;
   font-size: 12px;
   color: rgb(46, 46, 46);
+  background: none;
+    width: 100%;
 }
 .catalog__showmore a:hover {
 	border: 1px solid #b9bac6;
@@ -1406,10 +1411,14 @@ font-weight: 500;
 }
 
 .catalogitems__buttons {
+	
+    line-height: 1;
+}
+
+.catalogitems__prices {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    line-height: 1;
 }
 
 .catalogitems__oldprice {
@@ -2601,7 +2610,7 @@ p a:hover {
 }
 
 
-.button.solid {
+.formmodal__submit .button.solid {
 	max-width: 195px;
 	height: 50px;
 	line-height: 50px;
@@ -2703,6 +2712,10 @@ input[type="text"], input[type="tel"], input[type="email"] {
 	font-size: 10px;
 	padding-right: 5px;
 	color: rgb(189, 189, 189);
+}
+
+.catalogitems__buttons input.number {
+    display: none;
 }
 
 

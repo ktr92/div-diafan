@@ -32,11 +32,11 @@ if (empty($result["rows"]))
 {
 	return false;
 }
-if (! empty($result["name"]))
+/* if (! empty($result["name"]))
 {
 	echo '<div class="block_header">'.$result["name"].'</div>';
 }
-
-echo '<ul class="menu">';
+ */
+echo '<ul>';
 echo $this->get('show_level_leftmenu', 'menu', $result);
 echo '</ul>';

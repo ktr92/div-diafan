@@ -2432,3 +2432,1465 @@ Error #1: Файл themes/functions/show__title.php не существует.  
 ...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
 #4  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
 #5  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 15:18:39]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586785702 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15867857...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586866719-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586785702 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586866719-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586785702 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1586866719-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586785702 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15867857...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586866719-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586785702 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586866719-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586785702 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1586866719-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 15:50:36]
+URI: http://os-div/admin/shop/category/site164/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/category/site164/edit2/
+
+
+Error #1: Table 'div.diafan_shop_parents' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_shop_parents' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT element_id FROM `diafan_shop_parents` WHERE parent_id=2 AND trash='0') called at [F:\OSPanel\domains\os-div\includes\database.php:663]
+#3  DB::query_fetch_value(SELECT element_id FROM `diafan_shop_parents` WHERE parent_id=2 AND trash='0', 2, element_id) called at [F:\OSPanel\domains\os-div\includes\core.php:532]
+#4  Core->get_children(2, shop) called at [F:\OSPanel\domains\os-div\includes\route.php:227]
+#5  Route->save(shop/mekhanicheskie-ustroystva-upravleniya, Механические устройства управления, 2, shop, cat, 164, 0, 0, , 1) called at [F:\OSPanel\domains\os-div\adm\includes\save_functions.php:341]
+#6  Save_functions_admin->get_rewrite() called at [F:\OSPanel\domains\os-div\adm\includes\save.php:90]
+#7  Save_admin->__call(get_rewrite, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#8  Frame_admin->__call(get_rewrite, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#9  Init_admin->__call(get_rewrite, Array(...)) called at [F:\OSPanel\domains\os-div\modules\map\admin\map.admin.inc.php:70]
+#10  Map_admin_inc->save() called at [F:\OSPanel\domains\os-div\adm\includes\save.php:340]
+#11  Save_admin->prepare_new_values(Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:152]
+#12  Save_admin->save() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#13  Frame_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#14  Init_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:210]
+#15  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#16  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#17  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#18  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[14.04.2020 16:02:28]
+URI: http://os-div/admin/shop/site164/cat3/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/site164/cat3/
+
+
+Error #1: Undefined property: Shop_admin_group_clone::$result  called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124] 
+#1  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#2  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#3  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#4  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#5  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: array_merge(): Argument #2 is not an array  called at [] 
+#1  array_merge(Array(...), ) called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124]
+#2  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#3  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#4  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#5  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#6  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[14.04.2020 16:09:42]
+URI: http://os-div/admin/shop/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/
+
+
+Error #1: Undefined property: Shop_admin_group_clone::$result  called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124] 
+#1  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#2  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#3  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#4  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#5  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: array_merge(): Argument #2 is not an array  called at [] 
+#1  array_merge(Array(...), ) called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124]
+#2  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#3  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#4  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#5  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#6  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[14.04.2020 16:09:46]
+URI: http://os-div/admin/shop/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/
+
+
+Error #1: Undefined property: Shop_admin_group_clone::$result  called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124] 
+#1  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#2  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#3  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#4  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#5  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: array_merge(): Argument #2 is not an array  called at [] 
+#1  array_merge(Array(...), ) called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124]
+#2  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#3  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#4  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#5  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#6  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[14.04.2020 16:09:50]
+URI: http://os-div/admin/shop/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/
+
+
+Error #1: Undefined property: Shop_admin_group_clone::$result  called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124] 
+#1  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#2  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#3  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#4  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#5  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: array_merge(): Argument #2 is not an array  called at [] 
+#1  array_merge(Array(...), ) called at [F:\OSPanel\domains\os-div\adm\includes\action.php:124]
+#2  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#3  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#4  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#5  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#6  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[14.04.2020 16:16:54]
+URI: http://os-div/shop/korobki-otbora-moschnosti/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/mekhanicheskie-ustroystva-upravleniya/
+
+
+Error #1: syntax error, unexpected '<', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.list.php:212] 
+
+
+
+[14.04.2020 16:31:50]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: syntax error, unexpected '}', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.sort_block.php:65] 
+
+
+
+[14.04.2020 16:32:07]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: syntax error, unexpected '}', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.sort_block.php:65] 
+
+
+
+[14.04.2020 16:36:29]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+
+
+Error #1: syntax error, unexpected 'else' (T_ELSE)  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.sort_block.php:40] 
+
+
+
+[14.04.2020 16:40:29]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:40:31]
+URI: http://os-div/shop/show26/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...), id) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:1269]
+#2  Shop_model->id() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:51]
+#3  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#4  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#5  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:40:38]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:40:40]
+URI: http://os-div/shop/show26/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...), id) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:1269]
+#2  Shop_model->id() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:51]
+#3  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#4  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#5  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:40:46]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:40:49]
+URI: http://os-div/shop/show26/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...), id) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:1269]
+#2  Shop_model->id() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:51]
+#3  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#4  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#5  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:40:50]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:40:58]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:41:00]
+URI: http://os-div/shop/show26/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...), id) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:1269]
+#2  Shop_model->id() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:51]
+#3  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#4  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#5  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:41:05]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Undefined variable: result_rating  called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4248] 
+#1  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#2  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#3  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#4  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#5  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#6  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:41:59]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=32) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=32, 32) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=31) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=31, 31) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=30) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=30, 30) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=29) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=29, 29) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=16) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=16, 16) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=15) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=15, 15) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=8) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=8, 8) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=1) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=1, 1) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=28) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=28, 28) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=27) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=27, 27) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=26) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=26, 26) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=25) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=25, 25) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=14) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=14, 14) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=13) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=13, 13) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Table 'div.diafan_diafan_shop_counter' doesn't exist  called at [] 
+#1  trigger_error(Table 'div.diafan_diafan_shop_counter' doesn't exist, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=7) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(SELECT count_view FROM `diafan_diafan_shop_counter` WHERE element_id=7, 7) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4247]
+#4  Shop_model->format_data_element(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:4099]
+#5  Shop_model->format_data_category(Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:771]
+#6  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#7  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:44:32]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: syntax error, unexpected end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.list.php:245] 
+
+
+
+[14.04.2020 16:45:27]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: syntax error, unexpected ')', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.list.php:67] 
+
+
+
+[14.04.2020 16:50:56]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/
+
+
+Error #1: Unknown column 's.counter_buy1' in 'order clause'  called at [] 
+#1  trigger_error(Unknown column 's.counter_buy1' in 'order clause', 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\includes\database.php:479]
+#3  DB::query_range_fetch_all(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:917]
+#4  Shop_model->list_elements_query(1586897940, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:758]
+#5  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#6  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:51:08]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/
+
+
+Error #1: Unknown column 's.counter_buy1' in 'order clause'  called at [] 
+#1  trigger_error(Unknown column 's.counter_buy1' in 'order clause', 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\includes\database.php:479]
+#3  DB::query_range_fetch_all(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:917]
+#4  Shop_model->list_elements_query(1586897940, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:758]
+#5  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#6  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:51:15]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort2/
+
+
+Error #1: Unknown column 's.counter_buy1' in 'order clause'  called at [] 
+#1  trigger_error(Unknown column 's.counter_buy1' in 'order clause', 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\includes\database.php:479]
+#3  DB::query_range_fetch_all(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:917]
+#4  Shop_model->list_elements_query(1586897940, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:758]
+#5  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#6  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 16:55:32]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort1/
+
+
+Error #1: Unknown column 's.counter_buy1' in 'order clause'  called at [] 
+#1  trigger_error(Unknown column 's.counter_buy1' in 'order clause', 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\includes\database.php:479]
+#3  DB::query_range_fetch_all(SELECT s.id, s.name1 AS name, s.timeedit, s.anons1 AS anons, s.site_id, s.brand_id, s.no_buy, s.article, s.measure_unit1 AS measure_unit,  s.hit, s.new, s.action, s.is_file  FROM `diafan_shop` AS s IN...) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:917]
+#4  Shop_model->list_elements_query(1586897940, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\shop.model.php:758]
+#5  Shop_model->list_() called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:71]
+#6  Shop->init() called at [F:\OSPanel\domains\os-div\includes\init.php:721]
+#7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[14.04.2020 18:05:27]
+URI: http://os-div/admin/shop/config/success1/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/config/success1/
+
+
+Error #1: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(214, 179, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/1_mekhanicheskie-ustroystva-up.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(1_mekhanicheskie-ustroystva-up.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #2: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(212, 222, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/2_korobki-otbora-moschnosti.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(2_korobki-otbora-moschnosti.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #3: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(222, 166, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/3_shesterenchatye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(3_shesterenchatye-nasosy.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #4: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(198, 177, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/4_ruchnye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(4_ruchnye-nasosy.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #5: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(214, 137, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/5_gidravlicheskie-raspredeli.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(5_gidravlicheskie-raspredeli.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #6: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(99, 182, 99, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/6_pnevmaticheskie-organy-upra.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(6_pnevmaticheskie-organy-upra.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #7: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(203, 143, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/7_porshnevye-nasosy.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(7_porshnevye-nasosy.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+Error #8: A non-numeric value encountered  called at [F:\OSPanel\domains\os-div\includes\image.php:128] 
+#1  ImageInterface->calcResize(203, 191, 176, , 1) called at [F:\OSPanel\domains\os-div\includes\image\gd.php:137]
+#2  GDInterface->thumbnail(176, , 1) called at [F:\OSPanel\domains\os-div\includes\image.php:200]
+#3  ImageHelper->__call(thumbnail, Array(...)) called at [F:\OSPanel\domains\os-div\includes\image.php:256]
+#4  Image::resize(F:\OSPanel\domains\os-div/userfls/shop/cat_preview/8_emkostnoe-oborudovanie.png, 176, , 80, 1) called at [F:\OSPanel\domains\os-div\modules\images\images.inc.php:641]
+#5  Images_inc->get_variation_image(8_emkostnoe-oborudovanie.png, shop, Array(...), 0) called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:776]
+#6  Images_admin_action->resize() called at [F:\OSPanel\domains\os-div\modules\images\admin\images.admin.action.php:84]
+#7  Images_admin_action->init() called at [F:\OSPanel\domains\os-div\adm\includes\action.php:130]
+#8  Action_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:201]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[14.04.2020 18:20:16]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: Unterminated comment starting line 41  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.buy_form_catalog.php:41] 
+
+
+
+[14.04.2020 18:34:55]
+URI: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/
+
+
+Error #1: syntax error, unexpected end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.buy_form_catalog.php:227] 

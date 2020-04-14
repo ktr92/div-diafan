@@ -23,7 +23,7 @@ if (! defined('DIAFAN'))
 
 if ($result)
 {
-	echo '<div class="block paginator"'.(! empty($result["more"]) && ! empty($result["more"]["uid"]) ? ' uid="'.$result["more"]["uid"].'"' : '').'>';
+	echo '<div class="block pagination"'.(! empty($result["more"]) && ! empty($result["more"]["uid"]) ? ' uid="'.$result["more"]["uid"].'"' : '').'>';
 	foreach ($result as $l)
 	{
 		switch($l["type"])
@@ -32,11 +32,11 @@ if ($result)
 				break;
 
 			case "first":
-				echo '<a class="start" href="'.BASE_PATH_HREF.$l["link"].'">&#171;</a> ';
+				echo '<a href="'.BASE_PATH_HREF.$l["link"].'" class="prev"><img src="/images/pagination-prev.png"></a>';
 				break;
 
 			case "current":
-				echo '<span class="active">'.$l["name"].'</span> ';
+				echo '<span class="current">'.$l["name"].'</span> ';
 				break;
 
 			case "previous":
@@ -48,11 +48,11 @@ if ($result)
 				break;
 
 			case "last":
-				echo '<a class="end" href="'.BASE_PATH_HREF.$l["link"].'">&#187;</a> ';
+				echo '<a href="'.BASE_PATH_HREF.$l["link"].'" class="prev"><img src="/images/pagination-next.png"></a>';
 				break;
 
 			default:
-				echo '<a href="'.BASE_PATH_HREF.$l["link"].'">'.$l["name"].'</a> ';
+				echo '<a href="'.BASE_PATH_HREF.$l["link"].'"><span>'.$l["name"].'</span></a> ';
 				break;
 		}
 	}

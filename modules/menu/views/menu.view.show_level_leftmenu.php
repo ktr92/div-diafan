@@ -31,7 +31,7 @@ foreach ($result["rows"][$result["parent_id"]] as $row)
 	if ($row["active"])
 	{
 		// начало пункта меню для текущей страницы
-		echo '<li>';
+		echo '<li class="active">';
 	}
 	elseif ($row["active_child"])
 	{

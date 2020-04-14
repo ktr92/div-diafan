@@ -3936,13 +3936,14 @@ class Shop_model extends Model
 	 */
 	private function expand_sort_with_params()
 	{
-		$sort_fields_names = array(1 => $this->diafan->_('Цена', false), 3 => $this->diafan->_('Наименование товара', false));
+		$sort_fields_names = array(1 => $this->diafan->_('Цена', false), 3 => $this->diafan->_('Наименование товара', false), 5 => $this->diafan->_('По популярности', false));
 
 		$sort_directions = array(
 			1 => 'MIN(pr.price) ASC',
 			2 => 'MIN(pr.price) DESC',
 			3 => 's.name'._LANG.' ASC',
-			4 => 's.name'._LANG.' DESC'
+			4 => 's.name'._LANG.' DESC',
+			5 => 's.counter_buy DESC'
 		);
 
 		$param_ids = array();
@@ -3977,7 +3978,7 @@ class Shop_model extends Model
 			$param_ids[count($sort_directions)] = $row['id'];
 		}
 
-		$use_params_for_sort = $this->diafan->_route->sort > 4 ? true : false;
+		$use_params_for_sort = $this->diafan->_route->sort > 6 ? true : false;
 
 		return array('sort_fields_names' => $sort_fields_names, 'sort_directions' => $sort_directions,
 			'param_ids' => $param_ids, 'use_params_for_sort' => $use_params_for_sort);
