@@ -189,3 +189,8 @@ function echo(text) {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+$(document).ready(function(){	
+	$(".filter__item").on('click', function(){
+		$(this).parent('form').submit();
+	}); 
+});

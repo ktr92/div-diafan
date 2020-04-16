@@ -33,28 +33,9 @@ if(empty($result["ajax"]))
 }
 
 ?>
-<insert name="show_search" module="search" button="найти">
+<?=$this->diafan->_parser_theme->get_function_in_theme('<insert name="show_search" cat_id="current" module="shop" template="checkbox">  '); ?>	
 
-<div class="filter">
-	<div class="filter__name">Бренд:</div>
-	<form action="">												
-		<div class="filter__items">
-			<div class="filter__item"><input type="checkbox" id="param1"><label for="param1">Foton</label></div>
-			<div class="filter__item"><input type="checkbox" id="param2"><label for="param2">Hino</label></div>
-			<div class="filter__item"><input type="checkbox" id="param3"><label for="param3">hyundai</label></div>
-			<div class="filter__item"><input type="checkbox" id="param4"><label for="param4">isuzu</label></div>
-			<div class="filter__item"><input type="checkbox" id="param5"><label for="param5">kamaz/gaz</label></div>
-			<div class="filter__item"><input type="checkbox" id="param6"><label for="param6">maz</label></div>
-			<div class="filter__item"><input type="checkbox" id="param7"><label for="param7">scania</label></div>
-			<div class="filter__item"><input type="checkbox" id="param8"><label for="param8">Комплект вала / shatf kit</label></div>
-			<div class="filter__item"><input type="checkbox" id="param9"><label for="param9">shaanxi</label></div>
-			<div class="filter__item"><input type="checkbox" id="param10"><label for="param10">tata</label></div>
-			<div class="filter__item"><input type="checkbox" id="param11"><label for="param11">gazel</label></div>
-			<div class="filter__item"><input type="checkbox" id="param12"><label for="param12">zf</label></div>
-			<div class="filter__item"><input type="checkbox" id="param13"><label for="param13">iveco</label></div>
-		</div>
-	</form>
-</div>
+
 <div class="catalog__nav">	
 
 	

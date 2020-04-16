@@ -43,27 +43,12 @@ if(! defined("DIAFAN"))
 				<insert name="show_breadcrumb" separator="/" current="true">				
 			</div>
 		</div>
-		
 		<div class="container">
-			<div class="catalog">
-				<div class="catalog__list">
-					<div class="row">
-						<div class="col-md-3">
-							<aside>
-								<div class="leftmenu">
-									<insert name="show_block" module="menu" id="2" template="leftmenu">
-								</div>
-								<div class="leftbanner">
-									<div class="leftbanner__img"><a href=""><img src="/images/leftbanner.png" alt=""></a></div>
-								</div>
-							</aside>
-						</div>
-						<div class="col-md-9">
-							<div class="catalog__products">
-								<h1><insert name="show_h1"></h1>
-								<insert name="show_body">
-							</div>
-						</div>		
+			<!-- шаблонный тег вывода основного контента сайта -->
+			<insert name="show_body">
+		</div>		
+
+		
 		
 	</div>		
 </main>

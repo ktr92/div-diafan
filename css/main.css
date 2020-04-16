@@ -1507,11 +1507,12 @@ font-weight: 500;
   color: rgb(68, 78, 89);
   font-weight: bold;
   line-height: 1.438;
-  margin-right: 30px;
+  margin-right: 20px;
 }
-.product__buys {
+.product__data .product__buys > form {
     display: flex;
 	margin: 0 0 20px 0;
+	align-items: center;
 }
 
 .product__data {
@@ -1539,6 +1540,14 @@ font-weight: 500;
 	background-position: left center;
   color: rgb(32, 57, 131);
  
+}
+.product__data .product__buys {
+	position: relative;
+}
+
+.product__buys .error_message, .product__buys .error {
+	right:0;	
+	    bottom: -50px;
 }
 
 .params {
@@ -2717,6 +2726,17 @@ input[type="text"], input[type="tel"], input[type="email"] {
 .catalogitems__buttons input.number {
     display: none;
 }
+
+.shop_list {
+	clear: both;
+}
+
+.show_all {   
+    text-align: center;
+}
+
+
+/* responsive */ 
 
 
 @media (max-width: 1170px) {

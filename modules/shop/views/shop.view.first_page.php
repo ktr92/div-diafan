@@ -33,7 +33,7 @@ foreach ($result["categories"] as $cat_id => $cat)
 	echo '<div class="block_header"><a href="'.BASE_PATH_HREF.$cat["link_all"].'">'.$cat["name"].' ('.$cat["count"].')</a></div>';
 
 	//вывод изображений категории
-	if(! empty($cat["img"]))
+	/* if(! empty($cat["img"]))
 	{
 		echo '<div class="shop_cat_img">';
 		foreach ($cat["img"] as $img)
@@ -54,13 +54,13 @@ foreach ($result["categories"] as $cat_id => $cat)
 			. '</a> ';
 		}
 		echo '</div>';
-	}
+	} */
 
 	//краткое описание категории
-	if(! empty($cat["anons"]))
+/*	if(! empty($cat["anons"]))
 	{
 		echo '<div class="shop_cat_anons">'.$cat['anons'].'</div>';
-	}
+	}*/
 
 	//подкатегории
 	if(! empty($cat["children"]))

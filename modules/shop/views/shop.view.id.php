@@ -20,6 +20,134 @@ if (! defined('DIAFAN'))
 	}
 	include $path.'/includes/404.php';
 }
+?>
+
+<? /*
+<pre><? print_r($result); ?></pre>
+*/ ?>
+
+<div class="catalog catalog_product">
+						<div class="product">
+							<h1><?=$result["name"];?></h1>
+							<div class="product__content">
+								<div class="product__info">
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<div class="productimg">
+												<div class="productimg_container">
+													<? if($result["preview_images"]) { ?>
+													<div class="productimg__previewscontainer">
+														<div class="productimg__previews">
+														
+													<?	
+														foreach($result["img"] as $img)
+														{
+															echo ' <div class="productimg__preview"><div class="productimg__prev"><img src="'.$img["vs"]["large"].'"  class="img_block"></div></div>';
+														}
+													 ?>
+													
+													
+																													
+														</div>	
+														<div class="productimg__previewsarrows">
+															<div class="productimg__previewleft"><img src="/images/previews-up.png"></div>
+															<div class="productimg__previewright"><img src="/images/previews-down.png"></div>
+														</div>
+													<? } ?>
+													</div>		
+														<div class="productimg__image">
+															<div class="productimg__img productimg__img_desktop visible-lg visible-md visible-sm hidden-xs">																
+																<a href="<?=BASE_PATH.$img["link"]?>" data-lightbox="product"><img src="<?=BASE_PATH.$img["link"]?>" alt="" class="img_block"></a>
+															</div>
+															<div class="productimg__img productimg__img_mobile hidden-lg hidden-md hidden-sm visible-xs">
+																<a href="<?=BASE_PATH.$img["link"]?>" data-lightbox="product"><img src="<?=BASE_PATH.$img["link"]?>" alt="" class="img_block"></a>
+															</div>		</div>													
+												</div>												
+											</div>										
+										</div>	
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<div class="product__data">
+											
+												<? 	echo $this->get('buy_form_id', 'shop', array("row" => $result, "result" => $result)); ?>
+											
+												
+												<div class="product__sale"><a href="#modalSale" data-toggle="modal">Получить специальную цену</a></div>
+												
+											<?	//характеристики товара
+												if(! empty($result["param"]))
+												{
+													echo $this->get('param_params1', 'shop', array("rows" => $result["param"], "id" => $result["id"]));
+												}
+											?>	
+											<?	//характеристики товара
+												if(! empty($result["param"]))
+												{
+													echo $this->get('param_params2', 'shop', array("rows" => $result["param"], "id" => $result["id"]));
+												}
+											?>		
+												
+												
+												
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="product__description">
+								<div class="container">	
+									<div class="row">
+										<div class="col-md-6">
+											<div class="attributes attributes_right">
+												<div class="attributes__title">Набор фланца</div>
+												<div class="attributes__table">
+													<?	//характеристики товара
+													if(! empty($result["param"]))
+													{
+														echo $this->get('param_params3', 'shop', array("rows" => $result["param"], "id" => $result["id"]));
+													}
+												?>		
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="attributes">
+												<?	//характеристики товара
+													if(! empty($result["param"]))
+													{
+														echo $this->get('param_params4', 'shop', array("rows" => $result["param"], "id" => $result["id"]));
+													}
+												?>		
+												
+											</div>
+										</div>
+									</div>
+									
+									<div class="attributes attributes_large">
+												<div class="attributes__title">Технические параметры</div>
+												<div class="attributes__scroll wrapper1">
+													<div class="attributes__scrolldiv">
+													</div>
+												</div>
+												<div class="attributes__table wrapper2">
+													<?	//характеристики товара
+													if(! empty($result["param"]))
+													{
+														echo $this->get('param_params5', 'shop', array("rows" => $result["param"], "id" => $result["id"]));
+													}
+												?>		
+												</div>
+											</div>
+								</div>
+								</div>
+							</div>	
+					
+						</div>
+					</div>
+						</div>
+
+
+<?
 
 echo '<div class="js_shop_id js_shop shop shop_id shop-item-container">';
 

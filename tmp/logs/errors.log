@@ -119,17 +119,6 @@ Error #1: Страницы с подключенным модулем не су�
 #8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
 #9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
 
-Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
-#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
-#2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
-#3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
-#4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
-#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
-#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
-#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
-#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
-#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
-
 Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
 #1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
 #2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
@@ -3894,3 +3883,1456 @@ referer: http://os-div/shop/korobki-otbora-moschnosti/
 
 
 Error #1: syntax error, unexpected end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.buy_form_catalog.php:227] 
+
+
+
+[15.04.2020 11:05:47]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586878864 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15868788...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586937946-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586878864 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586937946-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586878864 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1586937946-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586878864 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15868788...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586937946-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586878864 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586937946-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586878864 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1586937946-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 10:55:33]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586960484 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15869604...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587023732-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586960484 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15869604...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587023732-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 10:55:36]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1586960484 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15869604...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587023732-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1586960484 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15869604...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587023732-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 10:55:51]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/admin
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586960484 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15869604...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587023732-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586960484 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15869604...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587023732-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586960484 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587023732-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 15:09:08]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: syntax error, unexpected end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params1.php:47] 
+
+
+
+[16.04.2020 15:09:10]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: syntax error, unexpected end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params1.php:47] 
+
+
+
+[16.04.2020 15:12:01]
+URI: http://os-div/admin/shop/site164/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/shop/site164/edit27/
+
+
+Error #1: Undefined variable: error  called at [F:\OSPanel\domains\os-div\includes\developer.php:222] 
+#1  Dev::exception(Exception) called at [F:\OSPanel\domains\os-div\index.php:81]
+
+Error #2: Вы не можете отправить файл инструкция.docx. Доступны только следующие типы файлов:.doc, .pdf, .txt, .xls, .docx, .xlsx, .png, .jpg, .jpeg. Новые типы файлов добавляются в настройках модуля.  called at [] 
+#1  Attachments_inc->save(27, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\attachments\admin\attachments.admin.inc.php:278]
+#2  Attachments_admin_inc->save_param(5, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\admin\shop.admin.php:2288]
+#3  Shop_admin->save_variable_param() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#4  Init_admin->__call(save_variable_param, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:325]
+#5  Save_admin->prepare_new_values(Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:152]
+#6  Save_admin->save() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#7  Frame_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#8  Init_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:210]
+#9  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#10  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#11  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#12  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[16.04.2020 15:20:46]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: Array to string conversion  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:53] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 15:24:13]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: syntax error, unexpected '<', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:27] 
+
+
+
+[16.04.2020 15:25:47]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: syntax error, unexpected '<', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:27] 
+
+
+
+[16.04.2020 15:34:10]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #16: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #17: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #18: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 15:38:57]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #16: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #17: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #18: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 15:39:12]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #3: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #4: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #5: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #6: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #7: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #8: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #9: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #10: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #11: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #12: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #13: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #14: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #15: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:40] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #16: Use of undefined constant param - assumed 'param'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #17: Illegal string offset 'value'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #18: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php:41] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.param_params2.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(param_params2, shop, Array(...)) called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php:85]
+#3  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.id.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#4  Template->get(id, shop, Array(...)) called at [F:\OSPanel\domains\os-div\includes\controller.php:134]
+#5  Controller->show_module() called at [F:\OSPanel\domains\os-div\themes\functions\show_module.php:23]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_module.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_module) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:34]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]

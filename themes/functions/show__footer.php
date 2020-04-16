@@ -97,3 +97,21 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="modal fade" id="modalSale">
+  <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4 class="modal-title">Получить специальную цену</h4>
+		<p>Оставьте свои контакные данные,<br/> мы Вам перезвоним!</p>
+	  </div>
+	  <div class="modal-body">
+		
+	  
+	<?=$this->diafan->_parser_theme->get_function_in_theme('<insert name="show_form" module="feedback" site_id="176" template="modal">'); ?>
+		
+	  </div>
+	 
+	</div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
