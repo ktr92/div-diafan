@@ -99,15 +99,14 @@ if (! defined('DIAFAN'))
 									<div class="row">
 										<div class="col-md-6">
 											<div class="attributes attributes_right">
-												<div class="attributes__title">Набор фланца</div>
-												<div class="attributes__table">
+												
 													<?	//характеристики товара
 													if(! empty($result["param"]))
 													{
 														echo $this->get('param_params3', 'shop', array("rows" => $result["param"], "id" => $result["id"]));
 													}
 												?>		
-												</div>
+												
 											</div>
 										</div>
 										<div class="col-md-6">
@@ -139,89 +138,32 @@ if (! defined('DIAFAN'))
 												</div>
 											</div>
 								</div>
+								
+								<? //анонс
+										echo '<div class="shop_text" style="padding: 30px;">'.$this->htmleditor($result['anons']).'</div>'; ?>
+								
+								<? //полное описание товара
+										echo '<div class="shop_text" style="padding: 30px;">'.$this->htmleditor($result['text']).'</div>'; ?>
+										
+										
+								
 								</div>
 							</div>	
+							
+							<div class="related">
+								<? echo $this->htmleditor('<insert name="show_block_rel" module="shop" count="10" images="1">'); ?>
+							</div>
+							
 					
 						</div>
 					</div>
-						</div>
+					
 
 
 <?
 
-echo '<div class="js_shop_id js_shop shop shop_id shop-item-container">';
-
-
-echo '<div class="shop-item-left">';
-
-//вывод изображений товара
-if(! empty($result["img"]))
-{
-	echo '<div class="js_shop_all_img shop_all_img shop-item-big-images">';
-	$k = 0;
-	foreach($result["img"] as $img)
-	{
-		switch ($img["type"])
-		{
-			case 'animation':
-				echo '<a class="js_shop_img shop-item-image'.(empty($k) ? ' active' : '').'" href="'.BASE_PATH.$img["link"].'" data-fancybox="gallery'.$result["id"].'shop" image_id="'.$img["id"].'">';
-				break;
-			case 'large_image':
-				echo '<a class="js_shop_img shop-item-image'.(empty($k) ? ' active' : '').'" href="'.BASE_PATH.$img["link"].'" rel="large_image" width="'.$img["link_width"].'" height="'.$img["link_height"].'" image_id="'.$img["id"].'">';
-				break;
-			default:
-				echo '<a class="js_shop_img shop-item-image'.(empty($k) ? ' active' : '').'" href="'.BASE_PATH.$img["link"].'" image_id="'.$img["id"].'">';
-				break;
-		}
-		echo '<img src="'.BASE_PATH.$img["link"].'" alt="'.$img["alt"].'" title="'.$img["title"].'" image_id="'.$img["id"].'" class="shop_id_img">';
-		echo '</a>';
-		$k++;
-	}
-	echo '<span class="shop-photo-labels">';
-		if (!empty($result['hit']))
-		{
-			echo '<img src="'.BASE_PATH.Custom::path('img/label_hot_big.png').'">';
-		}
-		if (!empty($result['action']))
-		{
-			echo '<img src="'.BASE_PATH.Custom::path('img/label_special_big.png').'">';
-		}
-		if (!empty($result['new']))
-		{
-			echo '<img src="'.BASE_PATH.Custom::path('img/label_new_big.png').'">';
-		}
-	echo '</span>';
-
-	echo '<span class="icon-zoom">&nbsp;</span>
-          <span class="js_shop_wishlist shop_wishlist shop-like'.(! empty($result["wish"]) ? ' active' : '').'"><i class="fa fa-heart'.(! empty($result["wish"]) ? '' : '-o').'">&nbsp;</i></span>';
-
-	echo '</div>';
-	if($result["preview_images"])
-	{
-		echo '<a class="control-prev shop-previews-control" href="#"><i class="fa fa-toggle-left"></i></a>
-	          <a class="control-next shop-previews-control" href="#"><i class="fa fa-toggle-right"></i></a>';
-		echo '<div class="shop_preview_img shop-item-previews items-scroller" data-item-per-screen="3" data-controls="shop-previews-control">';
-		foreach($result["img"] as $img)
-		{
-			echo ' <a class="js_shop_preview_img item" href="#" style="background-image:url('.$img["preview"].')" image_id="'.$img["id"].'">&nbsp;</a>';
-		}
-		echo '</div>';
-	}
-}
-
-echo '</div>';
-
-echo '<div class="shop-item-right">';
-	echo '<div class="shop-item-info1">';
-
-		//вывод артикула
-		if(! empty($result["article"]))
-		{
-			echo '<h4 class="shop-item-artikul">'.$this->diafan->_('Артикул').': '.$result["article"].'</h4>';
-		}
-
 		//вывод производителя
-		if (! empty($result["brand"]))
+		/* if (! empty($result["brand"]))
 		{
 			echo '<div class="shop_brand">';
 			echo $this->diafan->_('Производитель').': ';
@@ -248,9 +190,9 @@ echo '<div class="shop-item-right">';
 				}
 			}
 			echo '</div>';
-		}
+		} */
 
-		//вывод рейтинга товара
+		/* //вывод рейтинга товара
 		if(! empty($result["rating"]))
 		{
 			echo '<div class="shop-item-rate rate">'.$this->diafan->_('Рейтинг').": ";
@@ -351,6 +293,5 @@ if(! empty($result["previous"]) || ! empty($result["next"]))
 	{
 		echo '<div class="next_link"><a href="'.BASE_PATH_HREF.$result["next"]["link"].'">'.$result["next"]["text"].' &rarr;</a></div>';
 	}
-	echo '</div>';
-}
-echo $this->htmleditor('<insert name="show_block_rel" module="shop" count="4" images="1" defer="emergence" defer_title="Похожие товары">');
+	echo '</div>'; 
+}*/

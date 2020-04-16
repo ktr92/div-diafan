@@ -28,6 +28,12 @@ if (! defined('DIAFAN'))
 foreach ($result["rows"] as $param)
 {
 	if ((($param["id"]==9) && (!(empty($param["value"]))))) { 		
+	?>
+	<div class="attributes__title">Набор фланца</div>
+		<div class="attributes__table">
+	<?
 			echo $param["value"];			
 		} 
 	}
+ ?>
+ </div>

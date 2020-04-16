@@ -28,8 +28,15 @@ if (! defined('DIAFAN'))
 
 if(empty($result['rows'])) return false;
 
-
-	echo '<h2>'.$this->diafan->_('Похожие товары').'</h2>
-	<div class="shop-pane">';
+	echo '<h2>'.$this->diafan->_('Вам также может подойти').'</h2>
+	<div class="catalogitems related__slidercontainer">
+		<div class="row related__slider">';
+		$result["view_rows"] = 'rows_rel';
         echo $this->get($result["view_rows"],'shop',$result);
-	echo '</div>';
+	echo '</div>
+	
+	<div class="related__arrow">
+		<div class="related__left"><img src="/images/related-left.png" alt=""></div>
+		<div class="related__right"><img src="/images/related-right.png" alt=""></div>
+	</div>
+	</div>';

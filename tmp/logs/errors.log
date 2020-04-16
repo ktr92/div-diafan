@@ -5336,3 +5336,60 @@ Error #18: Illegal string offset 'link'  called at [F:\OSPanel\domains\os-div\mo
 ...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
 #12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
 #13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 17:05:16]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+
+
+Error #1: Undefined index: view_rows_rel  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_block_rel.php:35] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_block_rel.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_block_rel, shop, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:220]
+#3  Shop->show_block_rel(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#5  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#6  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 17:05:33]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+
+
+Error #1: Undefined index: view_rows_rel  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_block_rel.php:34] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_block_rel.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_block_rel, shop, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:220]
+#3  Shop->show_block_rel(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#5  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#6  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[16.04.2020 17:07:21]
+URI: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/
+
+
+Error #1: Undefined index: view_rows_rel  called at [F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_block_rel.php:34] 
+#1  include(F:\OSPanel\domains\os-div\modules\shop\views\shop.view.show_block_rel.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_block_rel, shop, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\shop\shop.php:220]
+#3  Shop->show_block_rel(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
+#5  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
+#6  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
+#7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]

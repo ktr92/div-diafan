@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 16 2020 г., 15:58
+-- Время создания: Апр 16 2020 г., 17:28
 -- Версия сервера: 10.3.13-MariaDB-log
 -- Версия PHP: 7.1.32
 
@@ -753,8 +753,8 @@ CREATE TABLE `diafan_bs` (
 --
 
 INSERT INTO `diafan_bs` (`id`, `name1`, `text1`, `alt1`, `title1`, `act1`, `type`, `file`, `html`, `link1`, `cat_id`, `check_number`, `check_click`, `show_click`, `created`, `date_start`, `date_finish`, `show_number`, `click`, `width`, `height`, `check_user`, `show_user`, `count_view`, `target_blank`, `sort`, `trash`) VALUES
-(1, 'Автомобильная гидравлика', '<div class=\"mainslider__items\">\r\n	<div class=\"mainslider__item\"><span>Доставка</span></div>\r\n	<div class=\"mainslider__item\"><span>Рассрочка</span></div>\r\n	<div class=\"mainslider__item\"><span>В наличии</span></div>\r\n</div>\r\n<div class=\"mainslider__text\">Более <span class=\"orange\">1000 видов</span> продукции!</div>', '', '', '1', '1', 'slide1_1.jpg', '', '', 1, '0', '0', 0, 1586725200, 0, 0, 0, 0, 0, 0, '0', 0, 132, '0', 2, '0'),
-(2, 'Автомобильная гидравлика 2', '<div class=\"mainslider__items\">\r\n	<div class=\"mainslider__item\"><span>Доставка</span></div>\r\n	<div class=\"mainslider__item\"><span>Рассрочка</span></div>\r\n	<div class=\"mainslider__item\"><span>В наличии</span></div>\r\n</div>\r\n<div class=\"mainslider__text\">Более <span class=\"orange\">1000 видов</span> продукции!</div>', '', '', '1', '1', 'slide1_2.png', '', '', 1, '0', '0', 0, 1586725200, 0, 0, 0, 0, 0, 0, '0', 0, 132, '0', 1, '0');
+(1, 'Автомобильная гидравлика', '<div class=\"mainslider__items\">\r\n	<div class=\"mainslider__item\"><span>Доставка</span></div>\r\n	<div class=\"mainslider__item\"><span>Рассрочка</span></div>\r\n	<div class=\"mainslider__item\"><span>В наличии</span></div>\r\n</div>\r\n<div class=\"mainslider__text\">Более <span class=\"orange\">1000 видов</span> продукции!</div>', '', '', '1', '1', 'slide1_1.jpg', '', '', 1, '0', '0', 0, 1586725200, 0, 0, 0, 0, 0, 0, '0', 0, 133, '0', 2, '0'),
+(2, 'Автомобильная гидравлика 2', '<div class=\"mainslider__items\">\r\n	<div class=\"mainslider__item\"><span>Доставка</span></div>\r\n	<div class=\"mainslider__item\"><span>Рассрочка</span></div>\r\n	<div class=\"mainslider__item\"><span>В наличии</span></div>\r\n</div>\r\n<div class=\"mainslider__text\">Более <span class=\"orange\">1000 видов</span> продукции!</div>', '', '', '1', '1', 'slide1_2.png', '', '', 1, '0', '0', 0, 1586725200, 0, 0, 0, 0, 0, 0, '0', 0, 133, '0', 1, '0');
 
 -- --------------------------------------------------------
 
@@ -2271,8 +2271,6 @@ INSERT INTO `diafan_map_index` (`id`, `url`, `module_name`, `element_id`, `eleme
 (31, 'shop/ivecoROUTE_END', 'shop', 14, 'brand', 1586869186, 'monthly', '', 0, 0, '0'),
 (32, 'shop/korobki-otbora-moschnosti/korobka-otbora-moschnosti-power-take-offsROUTE_END', 'shop', 1, 'element', 1586869266, 'monthly', '', 0, 0, '0'),
 (33, 'shop/korobki-otbora-moschnosti/korobka-otbora-moschnosti-power-take-offs-hyundai-ROUTE_END', 'shop', 2, 'element', 1586869312, 'monthly', '', 0, 0, '0'),
-(36, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-takeROUTE_END', 'shop', 23, 'element', 1586940351, 'monthly', '', 0, 0, '0'),
-(37, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-kopiya-kopiya-korobka-otbora-moschnoROUTE_END', 'shop', 19, 'element', 1586940407, 'monthly', '', 0, 0, '0'),
 (38, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-h4ROUTE_END', 'shop', 4, 'element', 1586940413, 'monthly', '', 0, 0, '0'),
 (39, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take31ROUTE_END', 'shop', 31, 'element', 1586940420, 'monthly', '', 0, 0, '0'),
 (40, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offsROUTE_END', 'shop', 8, 'element', 1586940427, 'monthly', '', 0, 0, '0'),
@@ -2282,8 +2280,13 @@ INSERT INTO `diafan_map_index` (`id`, `url`, `module_name`, `element_id`, `eleme
 (46, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-h28ROUTE_END', 'shop', 28, 'element', 1586940468, 'monthly', '', 0, 0, '0'),
 (47, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take29ROUTE_END', 'shop', 29, 'element', 1586940498, 'monthly', '', 0, 0, '0'),
 (48, 'shop/korobki-otbora-moschnosti/korobka-otbora-moschnosti-power-take-offs-hyundai-3ROUTE_END', 'shop', 3, 'element', 1586941938, 'monthly', '', 0, 0, '0'),
-(52, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-hROUTE_END', 'shop', 24, 'element', 1586960481, 'monthly', '', 0, 0, '0'),
-(60, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27ROUTE_END', 'shop', 27, 'element', 1587041462, 'monthly', '', 0, 0, '0');
+(64, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-takeROUTE_END', 'shop', 23, 'element', 1587042792, 'monthly', '', 0, 0, '0'),
+(65, 'shop/korobki-otbora-moschnosti/pokhozhie-korobka-otbora-moschnosti-power-take-offROUTE_END', 'shop', 22, 'element', 1587042798, 'monthly', '', 0, 0, '0'),
+(66, 'shop/korobki-otbora-moschnosti/pokhozhie-korobka-otbora-moschnosti-power-take-off21ROUTE_END', 'shop', 21, 'element', 1587042805, 'monthly', '', 0, 0, '0'),
+(67, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-hROUTE_END', 'shop', 24, 'element', 1587042811, 'monthly', '', 0, 0, '0'),
+(68, 'shop/korobki-otbora-moschnosti/pokhozhie-11-korobka-otbora-moschnosti-power-take-ROUTE_END', 'shop', 20, 'element', 1587042818, 'monthly', '', 0, 0, '0'),
+(69, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-kopiya-kopiya-korobka-otbora-moschnoROUTE_END', 'shop', 19, 'element', 1587042826, 'monthly', '', 0, 0, '0'),
+(70, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27ROUTE_END', 'shop', 27, 'element', 1587045297, 'monthly', '', 0, 0, '0');
 
 -- --------------------------------------------------------
 
@@ -3087,7 +3090,10 @@ INSERT INTO `diafan_rewrite` (`id`, `rewrite`, `module_name`, `element_id`, `ele
 (63, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take29', 'shop', 29, 'element', '0'),
 (64, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-h14', 'shop', 14, 'element', '0'),
 (65, 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27', 'shop', 27, 'element', '0'),
-(66, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-h28', 'shop', 28, 'element', '0');
+(66, 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-h28', 'shop', 28, 'element', '0'),
+(67, 'shop/korobki-otbora-moschnosti/pokhozhie-korobka-otbora-moschnosti-power-take-off', 'shop', 22, 'element', '0'),
+(68, 'shop/korobki-otbora-moschnosti/pokhozhie-korobka-otbora-moschnosti-power-take-off21', 'shop', 21, 'element', '0'),
+(69, 'shop/korobki-otbora-moschnosti/pokhozhie-11-korobka-otbora-moschnosti-power-take-', 'shop', 20, 'element', '0');
 
 -- --------------------------------------------------------
 
@@ -3453,33 +3459,6 @@ INSERT INTO `diafan_search_index` (`id`, `keyword_id`, `result_id`, `rating`) VA
 (362, 208, 21, 0),
 (363, 210, 21, 0),
 (364, 209, 21, 0),
-(374, 215, 23, 0),
-(375, 214, 23, 0),
-(376, 213, 23, 0),
-(377, 211, 23, 0),
-(378, 212, 23, 0),
-(379, 216, 23, 0),
-(380, 208, 23, 0),
-(381, 210, 23, 0),
-(382, 209, 23, 0),
-(383, 215, 24, 0),
-(384, 214, 24, 0),
-(385, 213, 24, 0),
-(386, 211, 24, 0),
-(387, 212, 24, 0),
-(388, 216, 24, 0),
-(389, 208, 24, 0),
-(390, 210, 24, 0),
-(391, 209, 24, 0),
-(392, 215, 25, 0),
-(393, 214, 25, 0),
-(394, 213, 25, 0),
-(395, 211, 25, 0),
-(396, 212, 25, 0),
-(397, 216, 25, 0),
-(398, 208, 25, 0),
-(399, 210, 25, 0),
-(400, 209, 25, 0),
 (428, 215, 29, 0),
 (429, 214, 29, 0),
 (430, 213, 29, 0),
@@ -3640,24 +3619,6 @@ INSERT INTO `diafan_search_index` (`id`, `keyword_id`, `result_id`, `rating`) VA
 (624, 279, 58, 1),
 (625, 291, 59, 0),
 (626, 297, 59, 0),
-(636, 215, 61, 0),
-(637, 214, 61, 0),
-(638, 213, 61, 0),
-(639, 211, 61, 0),
-(640, 212, 61, 0),
-(641, 216, 61, 0),
-(642, 208, 61, 0),
-(643, 210, 61, 0),
-(644, 209, 61, 0),
-(645, 215, 62, 0),
-(646, 214, 62, 0),
-(647, 213, 62, 0),
-(648, 211, 62, 0),
-(649, 212, 62, 0),
-(650, 216, 62, 0),
-(651, 208, 62, 0),
-(652, 210, 62, 0),
-(653, 209, 62, 0),
 (654, 215, 63, 0),
 (655, 214, 63, 0),
 (656, 213, 63, 0),
@@ -3730,24 +3691,70 @@ INSERT INTO `diafan_search_index` (`id`, `keyword_id`, `result_id`, `rating`) VA
 (739, 208, 73, 0),
 (740, 210, 73, 0),
 (741, 209, 73, 0),
-(769, 215, 77, 0),
-(770, 214, 77, 0),
-(771, 213, 77, 0),
-(772, 211, 77, 0),
-(773, 212, 77, 0),
-(774, 216, 77, 0),
-(775, 208, 77, 0),
-(776, 210, 77, 0),
-(777, 209, 77, 0),
-(841, 215, 85, 0),
-(842, 214, 85, 0),
-(843, 213, 85, 0),
-(844, 211, 85, 0),
-(845, 212, 85, 0),
-(846, 216, 85, 0),
-(847, 208, 85, 0),
-(848, 210, 85, 0),
-(849, 209, 85, 0);
+(877, 215, 89, 0),
+(878, 214, 89, 0),
+(879, 213, 89, 0),
+(880, 211, 89, 0),
+(881, 212, 89, 0),
+(882, 208, 89, 0),
+(883, 210, 89, 0),
+(884, 209, 89, 0),
+(885, 298, 89, 0),
+(886, 215, 90, 0),
+(887, 214, 90, 0),
+(888, 213, 90, 0),
+(889, 211, 90, 0),
+(890, 212, 90, 0),
+(891, 208, 90, 0),
+(892, 210, 90, 0),
+(893, 209, 90, 0),
+(894, 298, 90, 0),
+(895, 215, 91, 0),
+(896, 214, 91, 0),
+(897, 213, 91, 0),
+(898, 211, 91, 0),
+(899, 212, 91, 0),
+(900, 208, 91, 0),
+(901, 210, 91, 0),
+(902, 209, 91, 0),
+(903, 298, 91, 0),
+(904, 215, 92, 0),
+(905, 214, 92, 0),
+(906, 213, 92, 0),
+(907, 211, 92, 0),
+(908, 212, 92, 0),
+(909, 208, 92, 0),
+(910, 210, 92, 0),
+(911, 209, 92, 0),
+(912, 298, 92, 0),
+(913, 215, 93, 0),
+(914, 214, 93, 0),
+(915, 213, 93, 0),
+(916, 211, 93, 0),
+(917, 212, 93, 0),
+(918, 208, 93, 0),
+(919, 210, 93, 0),
+(920, 209, 93, 0),
+(921, 298, 93, 0),
+(922, 215, 94, 0),
+(923, 214, 94, 0),
+(924, 213, 94, 0),
+(925, 211, 94, 0),
+(926, 212, 94, 0),
+(927, 208, 94, 0),
+(928, 210, 94, 0),
+(929, 209, 94, 0),
+(930, 298, 94, 0),
+(931, 299, 94, 0),
+(932, 215, 95, 0),
+(933, 214, 95, 0),
+(934, 213, 95, 0),
+(935, 211, 95, 0),
+(936, 212, 95, 0),
+(937, 216, 95, 0),
+(938, 208, 95, 0),
+(939, 210, 95, 0),
+(940, 209, 95, 0);
 
 -- --------------------------------------------------------
 
@@ -4061,7 +4068,9 @@ INSERT INTO `diafan_search_keywords` (`id`, `keyword`) VALUES
 (294, 'mail'),
 (295, 'd1gps'),
 (296, 'avto'),
-(297, 'обратн');
+(297, 'обратн'),
+(298, 'похож'),
+(299, '111');
 
 -- --------------------------------------------------------
 
@@ -4101,9 +4110,6 @@ INSERT INTO `diafan_search_results` (`id`, `element_id`, `table_name`, `lang_id`
 (19, 16, 'shop', 1, '0', 6, 0, 0),
 (20, 17, 'shop', 1, '0', 6, 0, 0),
 (21, 18, 'shop', 1, '0', 6, 0, 0),
-(23, 20, 'shop', 1, '0', 6, 0, 0),
-(24, 21, 'shop', 1, '0', 6, 0, 0),
-(25, 22, 'shop', 1, '0', 6, 0, 0),
 (29, 26, 'shop', 1, '0', 6, 0, 0),
 (35, 32, 'shop', 1, '0', 6, 0, 0),
 (36, 2, 'shop_category', 1, '0', 6, 0, 0),
@@ -4130,8 +4136,6 @@ INSERT INTO `diafan_search_results` (`id`, `element_id`, `table_name`, `lang_id`
 (57, 174, 'site', 1, '0', 5, 0, 0),
 (58, 175, 'site', 1, '0', 5, 0, 0),
 (59, 176, 'site', 1, '0', 5, 0, 0),
-(61, 23, 'shop', 1, '0', 6, 0, 0),
-(62, 19, 'shop', 1, '0', 6, 0, 0),
 (63, 4, 'shop', 1, '0', 6, 0, 0),
 (64, 31, 'shop', 1, '0', 6, 0, 0),
 (65, 8, 'shop', 1, '0', 6, 0, 0),
@@ -4141,8 +4145,13 @@ INSERT INTO `diafan_search_results` (`id`, `element_id`, `table_name`, `lang_id`
 (71, 28, 'shop', 1, '0', 6, 0, 0),
 (72, 29, 'shop', 1, '0', 6, 0, 0),
 (73, 3, 'shop', 1, '0', 6, 0, 0),
-(77, 24, 'shop', 1, '0', 6, 0, 0),
-(85, 27, 'shop', 1, '0', 6, 0, 0);
+(89, 23, 'shop', 1, '0', 6, 0, 0),
+(90, 22, 'shop', 1, '0', 6, 0, 0),
+(91, 21, 'shop', 1, '0', 6, 0, 0),
+(92, 24, 'shop', 1, '0', 6, 0, 0),
+(93, 20, 'shop', 1, '0', 6, 0, 0),
+(94, 19, 'shop', 1, '0', 6, 0, 0),
+(95, 27, 'shop', 1, '0', 6, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4222,7 +4231,7 @@ CREATE TABLE `diafan_sessions` (
 
 INSERT INTO `diafan_sessions` (`user_id`, `session_id`, `hostname`, `user_agent`, `timestamp`, `session`) VALUES
 (1, '00kdcvs3c89opjqvppijh8tlu2telce9', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1586878864', 'visitors|a:10:{s:1:\"v\";s:18:\"1.0.0.0_1586763050\";s:10:\"only_valid\";b:0;s:5:\"valid\";b:1;s:15:\"valid_completed\";b:1;s:3:\"SID\";s:32:\"00kdcvs3c89opjqvppijh8tlu2telce9\";s:9:\"timestamp\";s:10:\"1586878863\";s:6:\"create\";i:1586866719;s:8:\"timeedit\";i:1586878864;s:4:\"site\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586878863;s:8:\"timeedit\";i:1586878864;}s:5:\"admin\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586878124;s:8:\"timeedit\";i:1586878324;}}group_action|a:1:{s:4:\"shop\";s:23:\"macros_shop_group_clone\";}shop_view|a:4:{i:32;i:1;i:27;i:1;i:26;i:1;i:3;i:1;}search|a:2:{i:0;s:95:\"КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1\";i:1;s:22:\"КОПИЯ КОПИЯ \";}'),
-(1, '8il7kl0r1rh574lise1ipq1elkgdkbok', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1587041855', 'visitors|a:11:{s:1:\"v\";s:18:\"1.0.0.0_1586763050\";s:10:\"only_valid\";b:0;s:5:\"valid\";b:1;s:15:\"valid_completed\";b:1;s:3:\"SID\";s:32:\"8il7kl0r1rh574lise1ipq1elkgdkbok\";s:9:\"timestamp\";s:10:\"1587041844\";s:6:\"create\";i:1587023732;s:8:\"timeedit\";i:1587041855;s:4:\"site\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1587041844;s:8:\"timeedit\";i:1587041855;}s:11:\"valid_count\";i:2;s:5:\"admin\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1587041429;s:8:\"timeedit\";i:1587041462;}}shop_view|a:1:{i:27;i:1;}redirect_edit|b:1;'),
+(1, '8il7kl0r1rh574lise1ipq1elkgdkbok', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1587047306', 'visitors|a:11:{s:1:\"v\";s:18:\"1.0.0.0_1586763050\";s:10:\"only_valid\";b:0;s:5:\"valid\";b:1;s:15:\"valid_completed\";b:1;s:3:\"SID\";s:32:\"8il7kl0r1rh574lise1ipq1elkgdkbok\";s:9:\"timestamp\";s:10:\"1587046358\";s:6:\"create\";i:1587023732;s:8:\"timeedit\";i:1587047306;s:4:\"site\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1587046358;s:8:\"timeedit\";i:1587047306;}s:11:\"valid_count\";i:2;s:5:\"admin\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1587045306;s:8:\"timeedit\";i:1587045308;}}shop_view|a:2:{i:27;i:1;i:24;i:1;}redirect_edit|b:1;'),
 (1, 'buhh9ia4qq7vabs5mk5gphibhdo9jtb4', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1586774109', 'visitors|a:10:{s:1:\"v\";s:18:\"1.0.0.0_1586763050\";s:10:\"only_valid\";b:0;s:5:\"valid\";b:1;s:15:\"valid_completed\";b:1;s:3:\"SID\";s:32:\"buhh9ia4qq7vabs5mk5gphibhdo9jtb4\";s:9:\"timestamp\";s:10:\"1586774105\";s:6:\"create\";i:1586764536;s:8:\"timeedit\";i:1586774109;s:5:\"admin\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586770284;s:8:\"timeedit\";i:1586774109;}s:4:\"site\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586774047;s:8:\"timeedit\";i:1586774097;}}group_action|a:2:{s:4:\"menu\";s:5:\"trash\";s:4:\"site\";s:7:\"unblock\";}search|a:1:{i:0;s:4:\"test\";}'),
 (1, 'j9hq2f3jovfl2hssirvj4rc04utmfpbj', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1586785704', 'visitors|a:11:{s:1:\"v\";s:18:\"1.0.0.0_1586763050\";s:10:\"only_valid\";b:0;s:5:\"valid\";b:1;s:15:\"valid_completed\";b:1;s:3:\"SID\";s:32:\"j9hq2f3jovfl2hssirvj4rc04utmfpbj\";s:9:\"timestamp\";s:10:\"1586785342\";s:6:\"create\";i:1586777577;s:8:\"timeedit\";i:1586785702;s:4:\"site\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586785342;s:8:\"timeedit\";i:1586785702;}s:11:\"valid_count\";i:1;s:5:\"admin\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586783028;s:8:\"timeedit\";i:1586783031;}}search|a:3:{i:0;s:6:\"dasdas\";i:1;s:16:\"контакты\";i:2;s:0:\"\";}'),
 (1, 'pfh64pj7ia5mahdsq2b6chig9gi25884', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1586960486', 'visitors|a:10:{s:1:\"v\";s:18:\"1.0.0.0_1586763050\";s:10:\"only_valid\";b:0;s:5:\"valid\";b:1;s:15:\"valid_completed\";b:1;s:3:\"SID\";s:32:\"pfh64pj7ia5mahdsq2b6chig9gi25884\";s:9:\"timestamp\";s:10:\"1586960484\";s:6:\"create\";i:1586937946;s:8:\"timeedit\";i:1586960484;s:4:\"site\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586941083;s:8:\"timeedit\";i:1586941519;}s:5:\"admin\";a:3:{s:6:\"is_new\";b:0;s:13:\"last_timeedit\";i:1586960481;s:8:\"timeedit\";i:1586960484;}}shop_view|a:3:{i:24;i:1;i:26;i:1;i:2;i:1;}Service_admin_express|a:6:{s:19:\"mode_express_choice\";s:6:\"export\";s:9:\"delimiter\";s:1:\";\";s:9:\"enclosure\";s:1:\"\"\";s:8:\"encoding\";s:6:\"cp1251\";s:17:\"cat_import_choice\";a:1:{s:3:\"cat\";i:1;}s:17:\"cat_export_choice\";a:1:{s:3:\"cat\";i:1;}}Service_inc|a:0:{}group_action|a:1:{s:10:\"shop/param\";s:5:\"trash\";}');
@@ -4245,15 +4254,6 @@ CREATE TABLE `diafan_sessions_hash` (
 --
 
 INSERT INTO `diafan_sessions_hash` (`id`, `user_id`, `hash`, `created`) VALUES
-(580, 1, '7893f43d07a787de4d580e41587fef8f', 1587035811),
-(583, 1, '5858af033028439587a2bca6dcddc534', 1587036211),
-(584, 1, '813bc61eea17a2cdbc7f710c81737546', 1587036216),
-(585, 1, '64ee1aa57897ac43d0bc50d61c1476f8', 1587038441),
-(586, 1, '12a95119a339bbd2862f5b7aa9e00c81', 1587038517),
-(587, 1, 'ca0a3756288c531df075d568ecccd5c1', 1587038805),
-(588, 1, '57316e98ba78b8dda1c56867a453ded5', 1587038901),
-(589, 1, 'dad6629b944b872d2611ce9d4c586dce', 1587038915),
-(590, 1, 'a82b8a0c6a7d4937b6548ad63a650576', 1587038927),
 (591, 1, '556e14820aa53b23127312946d59d416', 1587038960),
 (594, 1, 'd2280d1f96b6f660d7adf0f27b0bebb9', 1587038983),
 (595, 1, '91ce57aa41da552ac06cc5b62ce20237', 1587038985),
@@ -4295,7 +4295,6 @@ INSERT INTO `diafan_sessions_hash` (`id`, `user_id`, `hash`, `created`) VALUES
 (648, 1, 'f47e00b6fa7989772f87a88e8e269b60', 1587041374),
 (654, 1, '429f1c4d889e279b8225be691406f6e0', 1587041406),
 (656, 1, 'e7fd870a995267b4a2b6307879bf93f1', 1587041427),
-(659, 1, 'b9c6490b334515a189a85fefeeb73903', 1587041462),
 (660, 1, '839d1fcfa4967156b78d8a8b5fe6d0cc', 1587041520),
 (661, 1, '352dddd48c673574d52bc3bba1a4faa2', 1587041586),
 (662, 1, '90544f494cb6e8d3478a0e2b34db9416', 1587041753),
@@ -4303,7 +4302,33 @@ INSERT INTO `diafan_sessions_hash` (`id`, `user_id`, `hash`, `created`) VALUES
 (664, 1, 'a3276c88d813170d7af6985008864e26', 1587041811),
 (665, 1, '5ce72bee21eb21ebdd75a5335c82d54d', 1587041826),
 (666, 1, 'a37e80f07a89b5c0b87f9ca2d2031880', 1587041844),
-(667, 1, '9ee7bfd291b45ef6ccde15741118e56c', 1587041855);
+(667, 1, '9ee7bfd291b45ef6ccde15741118e56c', 1587041855),
+(670, 1, '8575ba84dfa5c1a24a05dbcdb65dbf07', 1587042653),
+(671, 1, '096113a828f5cd729af7b229a680fef0', 1587042673),
+(673, 1, '98bff1e9dea107b846b137074964278a', 1587042685),
+(674, 1, 'a6c6e15cc59be44d2084ba5f750a4a65', 1587042770),
+(677, 1, '5d084e95c0c84fd2d33c45d00dda305b', 1587042786),
+(680, 1, '3e644ecc9099de295f74b334c3570255', 1587042792),
+(683, 1, 'bcabfe7b2c9497183e2f0310970c18ff', 1587042798),
+(686, 1, 'f7a84bcfba112343be9b468dac199bac', 1587042805),
+(689, 1, '11b4b7ab7a792ee34113248d082422db', 1587042811),
+(692, 1, '0c22b53c000223a9506731c6fe3e2662', 1587042818),
+(695, 1, '65f941a373326e80044c26af95d6bb37', 1587042826),
+(696, 1, '2616189c8868f80ac4f59e92b7adaffe', 1587042832),
+(697, 1, '3678de953cec6ae1c6710689a0e307f3', 1587042886),
+(698, 1, '19ca14e7ea6328a42e0eb13d585e4c22', 1587042895),
+(709, 1, '40ee4bf2ae5c8200b83f8285722d99b1', 1587045297),
+(710, 1, '83f5dc7f75141b6053cdb7125f526142', 1587045306),
+(711, 1, 'ad29ea4fe6457ee9c13205a6b138c628', 1587045308),
+(712, 1, '14b11268bbd06f4f744745fff8e3b10d', 1587045726),
+(713, 1, '7ba65a83df21d7757fdb7f58e0b31711', 1587045736),
+(714, 1, '6ac1eb25915100b233afb34c4bc3f66e', 1587045806),
+(715, 1, '0d8b1fa71ede0853007ff6ceaa8f3fa3', 1587045843),
+(716, 1, '9117d5a3e863f9bb721cd7cc59b52405', 1587045915),
+(717, 1, 'b2d966f3777fb20cfe53a59d684f667d', 1587045933),
+(718, 1, 'b84aa45dbdcdc7ebf4ae32c5e82616a2', 1587045939),
+(719, 1, 'e7bf38f95e9f8737b39430c42bf836a5', 1587046040),
+(720, 1, 'b607fe14b5bedcf28a3464c10d427b5f', 1587046146);
 
 -- --------------------------------------------------------
 
@@ -4381,15 +4406,15 @@ INSERT INTO `diafan_shop` (`id`, `name1`, `act1`, `date_start`, `date_finish`, `
 (16, 'КОПИЯ Коробка отбора мощности POWER TAKE-OFFS', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 1, 1586869266, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
 (17, 'КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586869339, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
 (18, 'КОПИЯ КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586869339, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
-(19, 'КОПИЯ КОПИЯ КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 6, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586940407, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
-(20, 'КОПИЯ КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586869339, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
-(21, 'КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586869339, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
-(22, 'КОПИЯ КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586869339, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
-(23, 'КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 5, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586940351, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
-(24, 'КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 4, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1586960481, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
+(19, 'ПОХОЖИЕ 111 Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 6, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1587042825, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
+(20, 'ПОХОЖИЕ 11 Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1587042818, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
+(21, 'ПОХОЖИЕ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1587042805, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
+(22, 'ПОХОЖИЕ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 2, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1587042798, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
+(23, 'ПОХОЖИЕ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 5, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1587042792, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
+(24, 'ПОХОЖИЕ 1 Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 4, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 3, 1587042811, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
 (25, 'КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 10, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 2, 1586940444, 0, '0', '0', '1', '0', '0', 1, '', '', '0'),
 (26, 'КОПИЯ КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 3, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 2, 1586869312, 0, '0', '0', '1', '0', '0', 1, '', '', '0'),
-(27, 'КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 13, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 2, 1587041462, 3, '0', '0', '1', '0', '0', 1, '', '', '0'),
+(27, 'КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 13, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 2, 1587045297, 3, '0', '0', '1', '0', '0', 1, '', '', '0'),
 (28, 'КОПИЯ Коробка отбора мощности POWER TAKE-OFFS HYUNDAI 13K1', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 14, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 2, 1586940468, 0, '0', '0', '1', '0', '0', 1, '', '', '0'),
 (29, 'TATA Коробка отбора мощности POWER TAKE-OFFS', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 11, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 1, 1586940498, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
 (30, 'КОПИЯ КОПИЯ КОПИЯ Коробка отбора мощности POWER TAKE-OFFS', '1', 0, 0, '', '', '0', '0', '0', '0', '0', 'monthly', '0', '0', 3, 164, 8, '', '', '', '', '', '0', '', 'typePrefix=\nvendor=\nmodel=\nvendorCode=\nsales_notes=\nmanufacturer_warranty=\ncountry_of_origin=\nbid=', '0', '', '0', '0', '0', '', 1, 1586940434, 0, '0', '0', '0', '0', '0', 1, '', '', '0'),
@@ -4576,7 +4601,7 @@ CREATE TABLE `diafan_shop_cart_goods` (
 --
 
 INSERT INTO `diafan_shop_cart_goods` (`id`, `cart_id`, `created`, `good_id`, `price_id`, `count`, `param`, `additional_cost`, `trash`) VALUES
-(3, 3, 1587033869, 27, 58, 1, '', '', '0');
+(3, 3, 1587033869, 27, 68, 1, '', '', '0');
 
 -- --------------------------------------------------------
 
@@ -4714,13 +4739,8 @@ INSERT INTO `diafan_shop_category_rel` (`id`, `element_id`, `cat_id`, `trash`) V
 (16, 16, 3, '0'),
 (17, 17, 3, '0'),
 (18, 18, 3, '0'),
-(20, 20, 3, '0'),
-(21, 21, 3, '0'),
-(22, 22, 3, '0'),
 (26, 26, 3, '0'),
 (32, 32, 3, '0'),
-(34, 23, 3, '0'),
-(35, 19, 3, '0'),
 (36, 4, 3, '0'),
 (37, 31, 3, '0'),
 (38, 8, 3, '0'),
@@ -4730,8 +4750,13 @@ INSERT INTO `diafan_shop_category_rel` (`id`, `element_id`, `cat_id`, `trash`) V
 (44, 28, 3, '0'),
 (45, 29, 3, '0'),
 (46, 3, 3, '0'),
-(50, 24, 3, '0'),
-(59, 27, 3, '0');
+(63, 23, 3, '0'),
+(64, 22, 3, '0'),
+(65, 21, 3, '0'),
+(66, 24, 3, '0'),
+(67, 20, 3, '0'),
+(68, 19, 3, '0'),
+(69, 27, 3, '0');
 
 -- --------------------------------------------------------
 
@@ -4755,7 +4780,7 @@ INSERT INTO `diafan_shop_counter` (`id`, `element_id`, `count_view`, `trash`) VA
 (2, 27, 2, '0'),
 (3, 26, 2, '0'),
 (4, 3, 1, '0'),
-(5, 24, 1, '0'),
+(5, 24, 2, '0'),
 (6, 2, 1, '0');
 
 -- --------------------------------------------------------
@@ -5327,7 +5352,7 @@ INSERT INTO `diafan_shop_param_element` (`id`, `value1`, `param_id`, `element_id
 (4, '1,00', 2, 27, '0'),
 (5, '150', 3, 27, '0'),
 (6, '16', 4, 27, '0'),
-(7, '<table>\r\n														<tbody>\r\n															<tr>\r\n																<td>197KFL01000</td>\r\n																<td>SPICER 1120 21UNI222</td>\r\n															</tr>\r\n															<tr>\r\n																<td>197KFL03000</td>\r\n																<td>SPICER 1300 21UNI222</td>\r\n															</tr>\r\n															<tr>\r\n																<td>197KFL11000</td>\r\n																<td>DIN 10 21UNI222</td>\r\n															</tr>\r\n															<tr>\r\n																<td>197KFL12000</td>\r\n																<td>DIN 00 21UNI222</td>\r\n															</tr>\r\n														</tbody>\r\n													</table>', 9, 27, '0'),
+(7, '<table>\r\n<tbody>\r\n<tr>\r\n<td>197KFL01000</td>\r\n<td>SPICER 1120 21UNI222</td>\r\n</tr>\r\n<tr>\r\n<td>197KFL03000</td>\r\n<td>SPICER 1300 21UNI222</td>\r\n</tr>\r\n<tr>\r\n<td>197KFL11000</td>\r\n<td>DIN 10 21UNI222</td>\r\n</tr>\r\n<tr>\r\n<td>197KFL12000</td>\r\n<td>DIN 00 21UNI222</td>\r\n</tr>\r\n</tbody>\r\n</table>', 9, 27, '0'),
 (8, '<table>\r\n<tbody>\r\n<tr>\r\n<td>Пневматический / Механический</td>\r\n<td>UNI от/from DIN 5462 SE 606X01UNIZ0</td>\r\n</tr>\r\n</tbody>\r\n</table>', 10, 27, '0'),
 (9, '<table>\r\n<thead>\r\n<tr>\r\n<th>Коробкa передач</th>\r\n<th>Передаточное отношение на 1-ой скорости</th>\r\n<th>Сторона установки ком</th>\r\n<th>Направление вращения</th>\r\n<th>Обороты в минуту</th>\r\n<th>Крутящий момент (Hm)</th>\r\n<th>Монтажный комплект</th>\r\n<th>Адаптер</th>\r\n<th>Проставка</th>\r\n<th>Монтажный комлект</th>\r\n<th>Адаптер</th>\r\n<th>Проставка</th>\r\n<th>Последний столбец</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>JAC&nbsp;LC&nbsp;6T46</td>\r\n<td>6,3140</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>431 (пов.)</td>\r\n<td>150</td>\r\n<td>К947</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n</tr>\r\n<tr>\r\n<td>NISSAN&nbsp;MHS&nbsp;50</td>\r\n<td>-</td>\r\n<td><img src=\"/images/attr1.png\"></td>\r\n<td><img src=\"/images/attr2.png\"></td>\r\n<td>431 (пов.)</td>\r\n<td>150</td>\r\n<td>К947</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n</tr>\r\n<tr>\r\n<td>NISSAN&nbsp;MHS&nbsp;50&nbsp;A</td>\r\n<td>-</td>\r\n<td><img src=\"/images/attr1.png\"></td>\r\n<td><img src=\"/images/attr2.png\"></td>\r\n<td>431 (пов.)</td>\r\n<td>150</td>\r\n<td>К947</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n<td>-</td>\r\n</tr>\r\n</tbody>\r\n</table>', 8, 27, '0');
 
@@ -5389,13 +5414,8 @@ INSERT INTO `diafan_shop_price` (`id`, `good_id`, `price`, `old_price`, `count_g
 (16, 16, 1900, 0, 0, 16, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (17, 17, 35900, 0, 0, 17, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (18, 18, 35900, 0, 0, 18, 0, 0, 0, 0, '0', 0, 0, '', '0'),
-(20, 20, 35900, 0, 0, 20, 0, 0, 0, 0, '0', 0, 0, '', '0'),
-(21, 21, 35900, 0, 0, 21, 0, 0, 0, 0, '0', 0, 0, '', '0'),
-(22, 22, 35900, 0, 0, 22, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (26, 26, 28352, 35000, 0, 26, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (32, 32, 1900, 0, 0, 32, 0, 0, 0, 0, '0', 0, 0, '', '0'),
-(34, 23, 35900, 0, 0, 34, 0, 0, 0, 0, '0', 0, 0, '', '0'),
-(35, 19, 35900, 0, 0, 35, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (36, 4, 35900, 0, 0, 36, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (37, 31, 1900, 0, 0, 37, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (38, 8, 1900, 0, 0, 38, 0, 0, 0, 0, '0', 0, 0, '', '0'),
@@ -5405,8 +5425,13 @@ INSERT INTO `diafan_shop_price` (`id`, `good_id`, `price`, `old_price`, `count_g
 (44, 28, 28352, 35000, 0, 44, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (45, 29, 1900, 0, 0, 45, 0, 0, 0, 0, '0', 0, 0, '', '0'),
 (46, 3, 35900, 0, 0, 46, 0, 0, 0, 0, '0', 0, 0, '', '0'),
-(50, 24, 35900, 0, 0, 50, 0, 0, 0, 0, '0', 0, 0, '', '0'),
-(58, 27, 28352, 35000, 0, 58, 0, 0, 0, 0, '0', 0, 0, '', '0');
+(62, 23, 35900, 0, 0, 62, 0, 0, 0, 0, '0', 0, 0, '', '0'),
+(63, 22, 35900, 0, 0, 63, 0, 0, 0, 0, '0', 0, 0, '', '0'),
+(64, 21, 35900, 0, 0, 64, 0, 0, 0, 0, '0', 0, 0, '', '0'),
+(65, 24, 35900, 0, 0, 65, 0, 0, 0, 0, '0', 0, 0, '', '0'),
+(66, 20, 35900, 0, 0, 66, 0, 0, 0, 0, '0', 0, 0, '', '0'),
+(67, 19, 35900, 0, 0, 67, 0, 0, 0, 0, '0', 0, 0, '', '0'),
+(68, 27, 28352, 35000, 0, 68, 0, 0, 0, 0, '0', 0, 0, '', '0');
 
 -- --------------------------------------------------------
 
@@ -5447,6 +5472,18 @@ CREATE TABLE `diafan_shop_rel` (
   `rel_element_id` int(11) UNSIGNED NOT NULL DEFAULT 0 COMMENT 'идентификатор похожего товара из таблицы `diafan_shop`',
   `trash` enum('0','1') NOT NULL DEFAULT '0' COMMENT 'запись удалена в корзину: 0 - нет, 1 - да'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Связи похожих товаров';
+
+--
+-- Дамп данных таблицы `diafan_shop_rel`
+--
+
+INSERT INTO `diafan_shop_rel` (`id`, `element_id`, `rel_element_id`, `trash`) VALUES
+(1, 27, 20, '0'),
+(2, 27, 22, '0'),
+(3, 27, 21, '0'),
+(4, 27, 19, '0'),
+(5, 27, 24, '0'),
+(6, 27, 23, '0');
 
 -- --------------------------------------------------------
 
@@ -6215,7 +6252,7 @@ INSERT INTO `diafan_visitors_session` (`master_id`, `slave_id`, `id`, `session_i
 (1586777577, 1, '1586777577-1', 'j9hq2f3jovfl2hssirvj4rc04utmfpbj', 1, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1586777577', '1586785342', '1586785702', '1', ''),
 (1586866719, 1, '1586866719-1', '00kdcvs3c89opjqvppijh8tlu2telce9', 1, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1586866719', '1586878863', '1586878864', '1', ''),
 (1586937946, 1, '1586937946-1', 'pfh64pj7ia5mahdsq2b6chig9gi25884', 1, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1586937946', '1586960484', '1586960484', '1', ''),
-(1587023732, 1, '1587023732-1', '8il7kl0r1rh574lise1ipq1elkgdkbok', 1, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1587023732', '1587041844', '1587041855', '1', '');
+(1587023732, 1, '1587023732-1', '8il7kl0r1rh574lise1ipq1elkgdkbok', 1, 3, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36', '1587023732', '1587046358', '1587047306', '1', '');
 
 -- --------------------------------------------------------
 
@@ -6915,7 +6952,35 @@ INSERT INTO `diafan_visitors_url` (`master_id`, `slave_id`, `id`, `visitors_sess
 (1587041377, 1, '1587041377-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/param/site164/', '', '0', 'shop/param/site164/addnew1', '', '1', 164, 'shop', 0, 'param', '0', '0', 1, 3, '0', '1', '', '1587041391'),
 (1587041400, 1, '1587041400-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/param/site164/addnew1/', '', '0', 'shop/param/site164', '', '1', 164, 'shop', 0, 'param', '0', '0', 1, 3, '0', '1', '', '1587041400'),
 (1587041406, 1, '1587041406-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/edit27/', '', '0', 'shop/site164/cat3/edit27', '', '1', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587041462'),
-(1587041520, 1, '1587041520-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/sort5/', '', '0', 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27', '', '0', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587041855');
+(1587041520, 1, '1587041520-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/sort5/', '', '0', 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27', '', '0', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587041855'),
+(1587042651, 1, '1587042651-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/edit27/', '', '0', 'shop/site164/cat3/edit27', '', '1', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587042651'),
+(1587042653, 1, '1587042653-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/sort5/', '', '0', 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27', '', '0', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587042673'),
+(1587042685, 1, '1587042685-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/edit27/', '', '0', 'shop/site164/cat3/edit27', '', '1', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587042685'),
+(1587042770, 1, '1587042770-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/edit27/', '', '0', 'shop/site164', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042770'),
+(1587042772, 1, '1587042772-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/', '', '0', 'shop/site164/edit24', '', '1', 164, 'shop', 24, 'element', '0', '0', 1, 3, '0', '1', '', '1587042772'),
+(1587042786, 1, '1587042786-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/edit24/', '', '0', 'shop/site164/cat3', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042786'),
+(1587042789, 1, '1587042789-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/', '', '0', 'shop/cat3/site164/edit23', '', '1', 164, 'shop', 23, 'element', '0', '0', 1, 3, '0', '1', '', '1587042789'),
+(1587042792, 1, '1587042792-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit23/', '', '0', 'shop/site164/cat3', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042792'),
+(1587042795, 1, '1587042795-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/', '', '0', 'shop/cat3/site164/edit22', '', '1', 164, 'shop', 22, 'element', '0', '0', 1, 3, '0', '1', '', '1587042795'),
+(1587042798, 1, '1587042798-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit22/', '', '0', 'shop/site164/cat3', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042798'),
+(1587042801, 1, '1587042801-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/', '', '0', 'shop/cat3/site164/edit21', '', '1', 164, 'shop', 21, 'element', '0', '0', 1, 3, '0', '1', '', '1587042801'),
+(1587042805, 1, '1587042805-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit21/', '', '0', 'shop/site164/cat3', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042805'),
+(1587042808, 1, '1587042808-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/', '', '0', 'shop/cat3/site164/edit24', '', '1', 164, 'shop', 24, 'element', '0', '0', 1, 3, '0', '1', '', '1587042808'),
+(1587042811, 1, '1587042811-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit24/', '', '0', 'shop/site164/cat3', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042811'),
+(1587042814, 1, '1587042814-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/', '', '0', 'shop/cat3/site164/edit20', '', '1', 164, 'shop', 20, 'element', '0', '0', 1, 3, '0', '1', '', '1587042814'),
+(1587042818, 1, '1587042818-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit20/', '', '0', 'shop/site164/cat3', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042818'),
+(1587042822, 1, '1587042822-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/', '', '0', 'shop/cat3/site164/edit19', '', '1', 164, 'shop', 19, 'element', '0', '0', 1, 3, '0', '1', '', '1587042822'),
+(1587042826, 1, '1587042826-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit19/', '', '0', 'shop/site164/cat3', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587042826'),
+(1587042830, 1, '1587042830-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/', '', '0', 'shop/korobki-otbora-moschnosti', '', '0', 164, 'shop', 3, 'cat', '0', '0', 1, 3, '0', '1', '', '1587042830'),
+(1587042832, 1, '1587042832-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/', '', '0', 'shop/korobki-otbora-moschnosti/kopiya-korobka-otbora-moschnosti-power-take-offs-h', '', '0', 164, 'shop', 24, 'element', '0', '0', 1, 3, '0', '1', '', '1587042886'),
+(1587042888, 1, '1587042888-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27/', '', '0', 'shop/korobki-otbora-moschnosti', '', '0', 164, 'shop', 3, 'cat', '0', '0', 1, 3, '0', '1', '', '1587042894'),
+(1587042895, 1, '1587042895-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/sort5/', '', '0', 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27', '', '0', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587042895'),
+(1587045275, 1, '1587045275-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/', '', '0', 'shop/cat3/site164/edit27', '', '1', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587045275'),
+(1587045297, 1, '1587045297-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit27/', '', '0', 'shop/site164/cat3/edit27', '', '1', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587045297'),
+(1587045306, 1, '1587045306-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/site164/cat3/edit27/', '', '0', 'shop', '', '1', 164, 'shop', 0, 'element', '0', '0', 1, 3, '0', '1', '', '1587045306'),
+(1587045308, 1, '1587045308-1', '1587023732-1', '127.0.0.1', '0', '/', '/admin/shop/cat3/site164/edit27/', '', '0', 'shop/site164/cat3/edit27', '', '1', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587045308'),
+(1587045726, 1, '1587045726-1', '1587023732-1', '127.0.0.1', '0', '/', '/shop/korobki-otbora-moschnosti/sort5/', '', '0', 'shop/korobki-otbora-moschnosti/kopiya-kopiya-korobka-otbora-moschnosti-power-take27', '', '0', 164, 'shop', 27, 'element', '0', '0', 1, 3, '0', '1', '', '1587046358'),
+(1587047306, 1, '1587047306-1', '1587023732-1', '127.0.0.1', '0', '', '', '', '0', '/', '', '0', 1, 'site', 1, 'element', '0', '0', 1, 3, '0', '1', '', '1587047306');
 
 -- --------------------------------------------------------
 
@@ -8712,7 +8777,7 @@ ALTER TABLE `diafan_log_note`
 -- AUTO_INCREMENT для таблицы `diafan_map_index`
 --
 ALTER TABLE `diafan_map_index`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=61;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_menu`
@@ -8886,7 +8951,7 @@ ALTER TABLE `diafan_reviews_param_select`
 -- AUTO_INCREMENT для таблицы `diafan_rewrite`
 --
 ALTER TABLE `diafan_rewrite`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=67;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_search_history`
@@ -8898,19 +8963,19 @@ ALTER TABLE `diafan_search_history`
 -- AUTO_INCREMENT для таблицы `diafan_search_index`
 --
 ALTER TABLE `diafan_search_index`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=850;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=941;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_search_keywords`
 --
 ALTER TABLE `diafan_search_keywords`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=298;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=300;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_search_results`
 --
 ALTER TABLE `diafan_search_results`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=86;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_service_express_fields`
@@ -8928,7 +8993,7 @@ ALTER TABLE `diafan_service_express_fields_category`
 -- AUTO_INCREMENT для таблицы `diafan_sessions_hash`
 --
 ALTER TABLE `diafan_sessions_hash`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=668;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=721;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_shop`
@@ -9000,7 +9065,7 @@ ALTER TABLE `diafan_shop_category_parents`
 -- AUTO_INCREMENT для таблицы `diafan_shop_category_rel`
 --
 ALTER TABLE `diafan_shop_category_rel`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=60;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_shop_counter`
@@ -9162,7 +9227,7 @@ ALTER TABLE `diafan_shop_param_select`
 -- AUTO_INCREMENT для таблицы `diafan_shop_price`
 --
 ALTER TABLE `diafan_shop_price`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=59;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=69;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_shop_price_image_rel`
@@ -9180,7 +9245,7 @@ ALTER TABLE `diafan_shop_price_param`
 -- AUTO_INCREMENT для таблицы `diafan_shop_rel`
 --
 ALTER TABLE `diafan_shop_rel`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор';
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'идентификатор', AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT для таблицы `diafan_shop_waitlist`
