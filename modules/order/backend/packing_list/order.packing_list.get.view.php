@@ -226,8 +226,8 @@ $address =
 if($address)
 {
 ?>
-<hr>
-<iframe width="650" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo "http".(IS_HTTPS ? "s" : '')."://"; ?>maps.google.com/maps?ie=UTF8&iwloc=near&hl=ru&t=m&z=16&mrt=loc&geocode=&q=<?php echo urlencode($address); ?>&output=embed"></iframe>
+<hr><? /*
+<iframe width="650" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo "http".(IS_HTTPS ? "s" : '')."://"; ?>maps.google.com/maps?ie=UTF8&iwloc=near&hl=ru&t=m&z=16&mrt=loc&geocode=&q=<?php echo urlencode($address); ?>&output=embed"></iframe> */ ?>
 <?php }?>
 </div>
 </div>

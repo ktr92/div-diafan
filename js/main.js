@@ -193,4 +193,12 @@ $(document).ready(function(){
 	$(".filter__item").on('click', function(){
 		$(this).parent('form').submit();
 	}); 
+	
+	$(".order_form_param11 input").on('click', function(){
+		$('.order_form_param11 input').prop('checked', false);
+		$(this).prop('checked', true);
+	}); 
+	
+	
+	
 });

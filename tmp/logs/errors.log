@@ -15,18 +15,6 @@ agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
 referer: http://os-div/admin/images/
 
 
-Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY referer_domain' at line 1  called at [] 
-#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
-#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586763665-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
-#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586763665-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
-#4  Visitors_inc_counter->reset_traffic_source(1586763665-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
-#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
-#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
-#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
-#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
-#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
-#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
-
 Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1586590238 GROUP BY site_id ORDER ' at line 1  called at [] 
 #1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15865902...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
 #2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1586763665-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1586590238 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
@@ -86,19 +74,6 @@ agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
 referer: http://os-div/admin/site/
 
 
-Error #1: Unknown column 'map_no_show' in 'where clause'  called at [] 
-#1  trigger_error(Unknown column 'map_no_show' in 'where clause', 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
-#2  DB::_query(SELECT id FROM `diafan_tags` WHERE 1=1 AND map_no_show='0') called at [F:\OSPanel\domains\os-div\includes\database.php:663]
-#3  DB::query_fetch_value(SELECT id FROM `diafan_tags` WHERE 1=1 AND map_no_show='0', tags, id) called at [F:\OSPanel\domains\os-div\modules\map\map.inc.php:414]
-#4  Map_inc->delete_sites(Array(...)) called at [F:\OSPanel\domains\os-div\modules\map\admin\map.admin.inc.php:216]
-#5  Map_admin_inc->act(site, Array(...), 0) called at [F:\OSPanel\domains\os-div\adm\includes\act.php:106]
-#6  Act_admin->act() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
-#7  Frame_admin->__call(act, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:236]
-#8  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
-#9  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
-#10  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
-#11  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
-
 
 [13.04.2020 11:18:47]
 URI: http://os-div/?587&help=1
@@ -113,17 +88,6 @@ Error #1: Страницы с подключенным модулем не су�
 #2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
 #3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
 #4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
-#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
-#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
-#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
-#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
-#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
-
-Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
-#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
-#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
-#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
-#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
 #5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
 #6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
 #7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
@@ -150,33 +114,11 @@ agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
 referer: http://os-div/?587&help=1
 
 
-Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
-#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
-#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
-#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
-#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
-#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
-#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
-#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
-#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
-#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
-
 Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
 #1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
 #2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
 #3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
 #4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
-#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
-#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
-#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
-#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
-#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
-
-Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
-#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
-#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
-#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
-#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
 #5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
 #6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
 #7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
@@ -203,33 +145,11 @@ agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
 referer: http://os-div/?587&help=1
 
 
-Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
-#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
-#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
-#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
-#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
-#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
-#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
-#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
-#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
-#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
-
 Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
 #1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
 #2  Model->validate_attribute_site_cat(clauses, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.model.php:713]
 #3  Clauses_model->show_block(1, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\clauses\clauses.php:113]
 #4  Clauses->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
-#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
-#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
-#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
-#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
-#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
-
-Error #3: Страницы с подключенным модулем не существует.  called at [insert tag] 
-#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., files) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
-#2  Model->validate_attribute_site_cat(files, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\files\files.model.php:708]
-#3  Files_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\files\files.php:114]
-#4  Files->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
 #5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
 #6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
 #7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
@@ -255,17 +175,6 @@ host: DESKTOP-SR1PQ4B
 agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
 referer: http://os-div/?587&help=1
 
-
-Error #1: Страницы с подключенным модулем не существует.  called at [insert tag] 
-#1  Model->error_insert_tag(Страницы с подключенным модулем не существует., news) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
-#2  Model->validate_attribute_site_cat(news, Array(...), Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\news\news.model.php:931]
-#3  News_model->show_block(2, Array(...), Array(...), , 1, medium, ) called at [F:\OSPanel\domains\os-div\modules\news\news.php:114]
-#4  News->show_block(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
-#5  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:852]
-#6  Defer_action->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\action.php:815]
-#7  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
-#8  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
-#9  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
 
 Error #2: Страницы с подключенным модулем не существует.  called at [insert tag] 
 #1  Model->error_insert_tag(Страницы с подключенным модулем не существует., clauses) called at [F:\OSPanel\domains\os-div\includes\model.php:596]
@@ -5393,3 +5302,797 @@ Error #1: Undefined index: view_rows_rel  called at [F:\OSPanel\domains\os-div\m
 #6  Defer_action->action() called at [F:\OSPanel\domains\os-div\includes\init.php:685]
 #7  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
 #8  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 10:24:29]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587194668-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587194668-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 10:24:31]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/shop/mekhanicheskie-ustroystva-upravleniya/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1587048975 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587194668-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1587048975 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587194668-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 10:48:37]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/admin
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587194668-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587194668-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 11:18:30]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/shop/cart/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1587048975 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587194668-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'0' AND is_admin='0' AND timeedit<=1587048975 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'0' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587194668-1, ) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 11:18:31]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/shop/cart/
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587194668-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587194668-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587194668-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 11:41:29]
+URI: http://os-div/shop/cart/?614990
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/
+
+
+Error #1: syntax error, unexpected '}', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table.php:403] 
+
+
+
+[18.04.2020 11:41:55]
+URI: http://os-div/shop/cart/?614990
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/
+
+
+Error #1: syntax error, unexpected end of file  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table.php:432] 
+
+
+
+[18.04.2020 12:42:12]
+URI: http://os-div/shop/cart/?629056
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/sort5/
+
+
+Error #1: syntax error, unexpected '}', expecting end of file  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table.php:248] 
+
+
+
+[18.04.2020 12:53:04]
+URI: http://os-div/admin/delivery/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/admin/delivery/edit2/
+
+
+Error #1: Data too long for column 'name1' at row 1  called at [] 
+#1  trigger_error(Data too long for column 'name1' at row 1, 512) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(UPDATE `diafan_shop_delivery` SET `name1`='По согласованию с менеджером (менеджер поможет определиться со способом доставки)', ser...) called at [F:\OSPanel\domains\os-div\includes\database.php:194]
+#3  DB::query(UPDATE `diafan_shop_delivery` SET `name1`='По согласованию с менеджером (менеджер поможет определиться со способом доставки)', ser...) called at [F:\OSPanel\domains\os-div\adm\includes\save.php:191]
+#4  Save_admin->save() called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:169]
+#5  Frame_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\init.php:230]
+#6  Init_admin->__call(save, Array(...)) called at [F:\OSPanel\domains\os-div\adm\includes\frame.php:210]
+#7  Frame_admin->init() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:513]
+#8  Init_admin->module() called at [F:\OSPanel\domains\os-div\adm\includes\init.php:128]
+#9  Init_admin->init() called at [F:\OSPanel\domains\os-div\adm\index.php:32]
+#10  include_once(F:\OSPanel\domains\os-div\adm\index.php) called at [F:\OSPanel\domains\os-div\index.php:56]
+
+
+[18.04.2020 13:21:07]
+URI: http://os-div/shop/cart/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php:97] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(table_mail, cart, Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:561]
+#3  Cart_action->send_mails(3, Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:301]
+#4  Cart_action->order() called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:92]
+#5  Cart->action() called at [F:\OSPanel\domains\os-div\includes\init.php:706]
+#6  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 13:21:07]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:118] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&quot;&gt;) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 13:53:30]
+URI: http://os-div/visitors/counter/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
+referer: http://os-div/shop/cart/?266072
+
+
+Error #1: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY referer_domain' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587207210-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT referer_domain, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587207210-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY referer_domain...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1317]
+#4  Visitors_inc_counter->reset_traffic_source(1587207210-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:504]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`<>'1' AND is_admin='0' AND timeedit<=1587048975 GROUP BY site_id ORDER ' at line 1  called at [] 
+#1  trigger_error(You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=15870489...) called at [F:\OSPanel\domains\os-div\includes\database.php:876]
+#2  DB::_query(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587207210-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\includes\database.php:520]
+#3  DB::query_fetch_key(SELECT site_id, COUNT(*) AS `count` FROM `diafan_visitors_url` WHERE visitors_session_id='1587207210-1', `status`&lt;&gt;'1' AND is_admin='0' AND timeedit&lt;=1587048975 GROUP BY site_id ORDER BY `cou...) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:1480]
+#4  Visitors_inc_counter->reset_traffic_pages(1587207210-1, 1) called at [F:\OSPanel\domains\os-div\modules\visitors\inc\visitors.inc.counter.php:505]
+#5  Visitors_inc_counter->set(Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.inc.php:82]
+#6  Visitors_inc->__call(counter_set, Array(...)) called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:40]
+#7  Visitors_counter->init() called at [F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php:77]
+#8  include_once(F:\OSPanel\domains\os-div\modules\visitors\visitors.counter.php) called at [F:\OSPanel\domains\os-div\includes\init.php:404]
+#9  Init->include_other_file() called at [F:\OSPanel\domains\os-div\includes\init.php:170]
+#10  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 14:05:31]
+URI: http://os-div/shop/cart/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/korobki-otbora-moschnosti/
+
+
+Error #1: syntax error, unexpected '}', expecting ',' or ';'  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.form.php:246] 
+
+
+
+[18.04.2020 14:26:22]
+URI: http://os-div/shop/cart/?666551
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?666551
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php:97] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(table_mail, cart, Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:561]
+#3  Cart_action->send_mails(4, Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:301]
+#4  Cart_action->order() called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:92]
+#5  Cart->action() called at [F:\OSPanel\domains\os-div\includes\init.php:706]
+#6  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 14:26:22]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?666551
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:118] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&quot;&gt;) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 14:30:42]
+URI: http://os-div/shop/cart/?755899
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?755899
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php:97] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(table_mail, cart, Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:561]
+#3  Cart_action->send_mails(5, Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:301]
+#4  Cart_action->order() called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:92]
+#5  Cart->action() called at [F:\OSPanel\domains\os-div\includes\init.php:706]
+#6  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 14:30:42]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?755899
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:118] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&quot;&gt;) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:06:58]
+URI: http://os-div/shop/cart/?81451
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php:97] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.table_mail.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(table_mail, cart, Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:561]
+#3  Cart_action->send_mails(6, Array(...), Array(...)) called at [F:\OSPanel\domains\os-div\modules\cart\cart.action.php:301]
+#4  Cart_action->order() called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:92]
+#5  Cart->action() called at [F:\OSPanel\domains\os-div\includes\init.php:706]
+#6  Init->module() called at [F:\OSPanel\domains\os-div\includes\init.php:174]
+#7  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:06:58]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:118] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&quot;&gt;) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:27:25]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:118] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:27:59]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:118] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:28:51]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined variable: ecommerce_for_metrika  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:66] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:118] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:30:00]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined variable: row  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:27] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+Error #2: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:133] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:30:17]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:133] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:30:38]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:135] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;Спасибо за Ваш заказ! В ближайшее время мы свяжемся с Вами!&lt;/p&gt;
+&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&qu...) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:30:55]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:135] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&quot;&gt;&lt;/p&gt;) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:31:41]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:133] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&quot;&gt;&lt;/p&gt;) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]
+
+
+[18.04.2020 15:32:08]
+URI: http://os-div/shop/cart/done/
+client: 127.0.0.1
+host: DESKTOP-SR1PQ4B
+agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36
+referer: http://os-div/shop/cart/?81451
+
+
+Error #1: Undefined index: discount  called at [F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php:133] 
+#1  include(F:\OSPanel\domains\os-div\modules\cart\views\cart.view.show_last_order.php) called at [F:\OSPanel\domains\os-div\includes\template.php:78]
+#2  Template->get(show_last_order, cart, Array(...), ) called at [F:\OSPanel\domains\os-div\modules\cart\cart.php:152]
+#3  Cart->show_last_order(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:435]
+#4  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#5  Parser_theme->get_function_in_theme(&lt;p&gt;&lt;insert name=&quot;show_last_order&quot; module=&quot;cart&quot;&gt;&lt;/p&gt;) called at [F:\OSPanel\domains\os-div\themes\functions\show_text.php:33]
+#6  include(F:\OSPanel\domains\os-div\themes\functions\show_text.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#7  Parser_theme->functions(show_text) called at [F:\OSPanel\domains\os-div\themes\functions\show_body.php:33]
+#8  include(F:\OSPanel\domains\os-div\themes\functions\show_body.php) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:461]
+#9  Parser_theme->functions(Заказ оформлен, Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:442]
+#10  Parser_theme->start_element(Array(...)) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:144]
+#11  Parser_theme->get_function_in_theme(&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+
+&lt;insert name=&quot;show_head&quot;&gt;
+
+...) called at [F:\OSPanel\domains\os-div\includes\parser_theme.php:73]
+#12  Parser_theme->show_theme() called at [F:\OSPanel\domains\os-div\includes\init.php:187]
+#13  Init->start() called at [F:\OSPanel\domains\os-div\index.php:77]

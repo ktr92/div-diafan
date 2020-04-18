@@ -92,7 +92,7 @@ if ($result["row"]["price_arr"])
 		echo '</div>';
 	}
 
-	/* echo '<div class="addict-field">';
+	 echo '<div class="addict-field">';
 		echo '<div class="js_shop_form_param shop_form_param">';
 		foreach ($result["result"]["depends_param"] as $param)
 		{
@@ -131,7 +131,7 @@ if ($result["row"]["price_arr"])
 			}
 		}
 		echo '</div>';
-	echo '</div>'; */
+	echo '</div>'; 
 }
 
 if(! empty($result["row"]["additional_cost"]))
@@ -198,7 +198,12 @@ echo '<div class="js_shop_buy shop_buy to-cart">';
 	}
 	if(empty($hide_submit))
 	{
-		echo '<input type="button" class="button solid catalogitems__cart incart" value="" action="buy">';
+		if (! empty($result["row"]["count_in_cart"])) {
+			echo '<input type="button" class="button solid catalogitems__cart incart" value="" action="buy">';
+		}
+		else {
+			echo '<input type="button" class="button solid catalogitems__cart " value="" action="buy">';
+		}
 	}
 echo '</div>';
 

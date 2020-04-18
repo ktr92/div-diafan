@@ -71,6 +71,10 @@
     font-style: normal;
 }
 
+html {
+	 scroll-behavior: smooth;
+}
+
 body {
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
@@ -2098,7 +2102,7 @@ padding-left: 6px;
   -moz-appearance: textfield;
 }
 
-.cartconfirm__button a {
+.cartconfirm__button a, .cartconfirm__button button {
 	    text-align: center;
 		background-color: #203983;
 		height: 50px;
@@ -2107,6 +2111,8 @@ padding-left: 6px;
 		color: #fff;
 		border-radius: 25px;
 		line-height: 50px;
+		padding: 0;
+		border: none;
 }
 
 .cartconfirm__button span {
@@ -2200,6 +2206,37 @@ h1 {
  
 
 }
+.ordercontent  input[type="checkbox"]{
+    display:none;
+}
+
+.ordercontent input[type="checkbox"] + label
+{
+    background-image: url(/images/radio-off.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+    display:inline-block;
+    padding: 0 0 0 35px;
+	min-height: 22px;
+  font-size: 12px;
+  color: rgb(148, 159, 191);
+  text-decoration: underline;	
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.ordercontent input[type="checkbox"]:checked + label
+{
+    background-image: url(/images/radio-on.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	
+  color: rgb(83, 102, 159);
+ 
+
+}
 
 .ordercontent__caption {
   font-size: 14px;
@@ -2259,11 +2296,12 @@ border-bottom: 1px solid #f2f2f5;
 	position: relative;
 }
 
+
 .ordercontent {
 	margin: 35px 0;
 }
 
-.ordercontent__input input[type="text"] {
+.ordercontent__input input[type="text"], .ordercontent__input input[type="tel"], .ordercontent__input input[type="email"] {
 	height: 48px;
 	line-height: 48px;
 	border-radius: 24px;
@@ -3020,6 +3058,9 @@ table td, table td span {
 .cartconfirm__button a {
 	width: 120px
 }
+.cartconfirm__button button {
+	width: 120px
+}
 .cartconfirm__button {
 	margin-left: 0;
 }
@@ -3027,6 +3068,7 @@ table td, table td span {
 	padding-left: 17px;
 	font-size: 11px;
 }
+
 .cartconfirm__text {
 	display: block;
 }

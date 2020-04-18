@@ -20,6 +20,21 @@ if (! defined('DIAFAN')) {
 	include $path.'/includes/404.php';
 }
 
+?>
+
+		<div class="smallcontent">
+			<div class="success">
+				<div class="succes__title"><h1>Ваш заказ <span class="blue">№<?=$result["id"]?></span> оформлен</h1> </div>
+				<div class="success__text1"><p>
+					Спасибо за заказ! Скачать счет на оплату можно по ссылке <a href="/order/get/packing_list/<?=$result["id"]?>/" target="_blank">Скачать счет</a>
+				</p></div>
+				<div class="success__text2">Так же счет был отправлен на указынный e-mail.</div>
+				<div class="success__text3"><p>Отдел работы с клиентами - 8 (800) 333-87-17</p></div>
+			</div>
+		</div>
+
+<?
+/* 
 //JS-layer for analitics ecommerce, dataLayer
 $ecommerce_for_metrika = '<script type="text/javascript">
 window.dataLayer.push({
@@ -331,3 +346,4 @@ foreach($result["param"] as $param)
 		echo '<div class="cart_param_text">'.$param["text"].'</div>';
 	}
 }
+ */

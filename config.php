@@ -120,4 +120,4 @@ define("LAST_1C_EXPORT", '');
 define("NO_X_FRAME", false);
 
 // примененные темы
-define("CUSTOM", '');
+define("CUSTOM", 'addon_283_addonssber_payment');
